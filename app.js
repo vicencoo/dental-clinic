@@ -1,42 +1,35 @@
 const videoAssets = [
   {
     id: 1,
-    poster:
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=900",
-    videoSrc: "./videos/video-1.mp4",
+    poster: "/public/images/dental-9.webp",
+    videoSrc: "/public/videos/video-1.mp4",
   },
   {
     id: 2,
-    poster:
-      "https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=900",
-    videoSrc: "../videos/video-2.mp4",
+    poster: "/public/images/dental-10.png",
+    videoSrc: "/public/videos/video-2.mp4",
   },
   {
     id: 3,
-    poster:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=900",
-    videoSrc: "./videos/video-3.mp4",
+    poster: "/public/images/dental-11.webp",
+    videoSrc: "/public/videos/video-3.mp4",
   },
   {
     id: 4,
-    poster:
-      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=900",
-    videoSrc: "./videos/video-4.mp4",
+    poster: "/public/images/dental-12.webp",
+    videoSrc: "/public/videos/video-4.mp4",
   },
   {
     id: 5,
-    poster:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=900",
-    videoSrc: "./videos/video-5.mp4",
+    poster: "/public/images/dental-8.webp",
+    videoSrc: "/public/videos/video-5.mp4",
   },
   {
     id: 6,
-    poster:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=900",
-    videoSrc: "./videos/video-2.mp4",
+    poster: "/public/images/dental-2.webp",
+    videoSrc: "/public/videos/video-2.mp4",
   },
 ];
-
 
 const translations = window.LOTUS_TRANSLATIONS || {};
 let currentLanguage = localStorage.getItem("luminaLanguage") || "sq";
@@ -339,7 +332,8 @@ const applyLanguage = (language) => {
   updateLanguageButton();
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    element.textContent = dictionary[element.dataset.i18n] || element.textContent;
+    element.textContent =
+      dictionary[element.dataset.i18n] || element.textContent;
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
