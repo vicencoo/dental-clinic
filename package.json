@@ -1,0 +1,22 @@
+{
+  "name": "dental-clinic-concept",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:server\"",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "dev:server": "npx serve .",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify",
+    "preview": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "concurrently": "^10.0.3",
+    "tailwindcss": "^4.3.1"
+  }
+}
