@@ -15,6 +15,13 @@ const languageMenu = document.getElementById("languageMenu");
 const languageFlag = document.getElementById("languageFlag");
 const languageCode = document.getElementById("languageCode");
 const languageOptions = document.querySelectorAll("[data-language]");
+const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenuLinks = document.querySelectorAll("#mobileMenu a");
+const navLinks = document.querySelectorAll("[data-nav-section]");
+const navSections = document.querySelectorAll(
+  "#top, #about, #services, #gallery, #reviews, #contact",
+);
 
 const videoModal = document.getElementById("videoModal");
 const modalVideo = document.getElementById("modalVideo");
@@ -75,6 +82,27 @@ const toggleLanguageMenu = () => {
   }
 };
 
+const closeMobileMenu = () => {
+  mobileMenu?.classList.add("hidden");
+  mobileMenuToggle?.classList.remove("is-open");
+  mobileMenuToggle?.setAttribute("aria-expanded", "false");
+};
+
+const openMobileMenu = () => {
+  mobileMenu?.classList.remove("hidden");
+  mobileMenuToggle?.classList.add("is-open");
+  mobileMenuToggle?.setAttribute("aria-expanded", "true");
+  closeLanguageMenu();
+};
+
+const toggleMobileMenu = () => {
+  if (mobileMenu?.classList.contains("hidden")) {
+    openMobileMenu();
+  } else {
+    closeMobileMenu();
+  }
+};
+
 const updateLanguageButton = () => {
   const meta = languageMeta[currentLanguage] || languageMeta.en;
 
@@ -92,6 +120,29 @@ const updateLanguageButton = () => {
     option.classList.toggle("bg-[#f8f3ee]", isSelected);
     option.classList.toggle("text-[#b78148]", isSelected);
   });
+};
+
+const updateActiveNav = (sectionId) => {
+  navLinks.forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.navSection === sectionId);
+  });
+};
+
+const getActiveSectionId = () => {
+  const scrollPosition = window.scrollY + window.innerHeight * 0.35;
+  let activeSectionId = "top";
+
+  navSections.forEach((section) => {
+    if (section.offsetTop <= scrollPosition) {
+      activeSectionId = section.id;
+    }
+  });
+
+  return activeSectionId;
+};
+
+const syncActiveNav = () => {
+  updateActiveNav(getActiveSectionId());
 };
 
 if ("IntersectionObserver" in window) {
@@ -407,6 +458,30 @@ const applyLanguage = (language) => {
 };
 
 languageToggle?.addEventListener("click", toggleLanguageMenu);
+mobileMenuToggle?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  toggleMobileMenu();
+});
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", closeMobileMenu);
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    updateActiveNav(link.dataset.navSection);
+  });
+});
+
+let activeNavFrame;
+
+const queueActiveNavSync = () => {
+  window.cancelAnimationFrame(activeNavFrame);
+  activeNavFrame = window.requestAnimationFrame(syncActiveNav);
+};
+
+window.addEventListener("scroll", queueActiveNavSync, { passive: true });
+window.addEventListener("resize", queueActiveNavSync);
 
 languageOptions.forEach((option) => {
   option.addEventListener("click", () => {
@@ -419,14 +494,23 @@ document.addEventListener("click", (event) => {
   if (!languageSelector?.contains(event.target)) {
     closeLanguageMenu();
   }
+
+  if (
+    !mobileMenu?.contains(event.target) &&
+    !mobileMenuToggle?.contains(event.target)
+  ) {
+    closeMobileMenu();
+  }
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeLanguageMenu();
+    closeMobileMenu();
   }
 });
 
 renderImages();
+syncActiveNav();
 
 applyLanguage(currentLanguage);

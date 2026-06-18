@@ -10,7 +10,7 @@
 
   <body class="text-[#17252f] antialiased selection:bg-[#c9a47a]/30">
     <!-- HEADER / HERO -->
-    <header class="relative min-h-screen overflow-hidden">
+    <header id="top" class="relative min-h-screen overflow-hidden">
       <div class="hero-grid pointer-events-none absolute inset-0"></div>
       <div
         class="pointer-events-none absolute -left-28 top-28 h-80 w-80 rounded-full bg-[#3ca096]/15 blur-3xl"
@@ -19,16 +19,16 @@
         class="pointer-events-none absolute right-0 top-24 h-96 w-96 rounded-full bg-[#c9a47a]/20 blur-3xl"
       ></div>
 
-      <nav class="fixed left-0 right-0 top-0 z-50 px-3 py-3 sm:px-5">
+      <nav class="fixed left-0 right-0 top-0 z-50 px-2.5 py-2.5 sm:px-5 sm:py-3">
         <div
-          class="glass-nav mx-auto flex max-w-7xl items-center justify-between rounded-2xl px-5 py-4 ring-1 ring-white/60 lg:px-8"
+          class="glass-nav mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-2xl px-3 py-3 ring-1 ring-white/60 sm:px-5 sm:py-4 lg:px-8"
         >
-          <a href="#" class="group flex items-center gap-3">
+          <a href="#" class="group flex min-w-0 items-center gap-2 sm:gap-3">
             <div
-              class="grid h-11 w-11 place-items-center rounded-full bg-[#0d2430] text-[#f0d7b5] shadow-lg shadow-[#0d2430]/20 transition duration-300 group-hover:rotate-12"
+              class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#0d2430] text-[#f0d7b5] shadow-lg shadow-[#0d2430]/20 transition duration-300 group-hover:rotate-12 sm:h-11 sm:w-11"
             >
               <svg
-                class="h-6 w-6"
+                class="h-5 w-5 sm:h-6 sm:w-6"
                 viewBox="0 0 48 48"
                 fill="none"
                 aria-hidden="true"
@@ -55,12 +55,12 @@
             </div>
             <div>
               <h1
-                class="text-xl font-semibold tracking-[0.32em] text-[#0d2430]"
+                class="text-lg font-semibold tracking-[0.22em] text-[#0d2430] sm:text-xl sm:tracking-[0.32em]"
               >
                 LOTUS
               </h1>
               <p
-                class="text-[10px] tracking-[0.35em] text-[#8b7768]"
+                class="text-[9px] tracking-[0.2em] text-[#8b7768] sm:text-[10px] sm:tracking-[0.35em]"
                 data-i18n="brand.subtitle"
               >
                 CLINIC DENTAL
@@ -69,107 +69,196 @@
           </a>
 
           <div
-            class="hidden items-center gap-8 text-xs font-semibold uppercase tracking-widest text-[#51636b] lg:flex"
+            class="hidden items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#51636b] lg:flex"
           >
             <a
-              class="text-[#0d2430] transition hover:text-[#c08f59]"
-              href="#"
+              class="nav-link desktop-nav-link is-active"
+              href="#top"
+              data-nav-section="top"
               data-i18n="nav.home"
               >Home</a
             >
             <a
-              class="transition hover:text-[#c08f59]"
+              class="nav-link desktop-nav-link"
               href="#about"
+              data-nav-section="about"
               data-i18n="nav.about"
               >About</a
             >
             <a
-              class="transition hover:text-[#c08f59]"
+              class="nav-link desktop-nav-link"
               href="#services"
+              data-nav-section="services"
               data-i18n="nav.services"
               >Services</a
             >
             <a
-              class="transition hover:text-[#c08f59]"
+              class="nav-link desktop-nav-link"
               href="#gallery"
+              data-nav-section="gallery"
               data-i18n="nav.gallery"
               >Gallery</a
             >
             <a
-              class="transition hover:text-[#c08f59]"
+              class="nav-link desktop-nav-link"
               href="#reviews"
+              data-nav-section="reviews"
               data-i18n="nav.reviews"
               >Reviews</a
             >
             <a
-              class="transition hover:text-[#c08f59]"
+              class="nav-link desktop-nav-link"
               href="#contact"
+              data-nav-section="contact"
               data-i18n="nav.contact"
               >Contact</a
             >
           </div>
 
-          <div id="languageSelector" class="relative">
-            <button
-              id="languageToggle"
-              class="flex items-center gap-2 rounded-full border border-[#d8c7b8] bg-white/85 px-3 py-2 text-xs font-bold uppercase tracking-widest text-[#17252f] shadow-sm outline-none transition hover:-translate-y-0.5 hover:border-[#c9a47a] hover:bg-white focus:ring-4 focus:ring-[#c9a47a]/20"
-              type="button"
-              aria-label="Language"
-              aria-haspopup="listbox"
-              aria-expanded="false"
-              data-i18n-aria-label="language.label"
-            >
-              <span id="languageFlag" aria-hidden="true">🇦🇱</span>
-              <span id="languageCode">SQ</span>
-              <span class="text-[10px] text-[#8b7768]" aria-hidden="true"
-                >▾</span
+          <div class="flex shrink-0 items-center gap-2">
+            <div id="languageSelector" class="relative">
+              <button
+                id="languageToggle"
+                class="flex shrink-0 items-center gap-1.5 rounded-full border border-[#d8c7b8] bg-white/85 px-2.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#17252f] shadow-sm outline-none transition hover:-translate-y-0.5 hover:border-[#c9a47a] hover:bg-white focus:ring-4 focus:ring-[#c9a47a]/20 sm:gap-2 sm:px-3 sm:tracking-widest"
+                type="button"
+                aria-label="Language"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                data-i18n-aria-label="language.label"
               >
-            </button>
+                <span id="languageFlag" aria-hidden="true">🇦🇱</span>
+                <span id="languageCode">SQ</span>
+                <span class="text-[10px] text-[#8b7768]" aria-hidden="true"
+                  >▾</span
+                >
+              </button>
 
-            <div
-              id="languageMenu"
-              class="absolute right-0 top-12 z-70 hidden w-44 overflow-hidden rounded-2xl border border-white/70 bg-white/95 p-2 shadow-2xl shadow-[#0d2430]/15 backdrop-blur"
-              role="listbox"
-              aria-label="Language"
-              data-i18n-aria-label="language.label"
-            >
-              <button
-                class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
-                type="button"
-                role="option"
-                data-language="sq"
+              <div
+                id="languageMenu"
+                class="absolute right-0 top-12 z-70 hidden w-44 overflow-hidden rounded-2xl border border-white/70 bg-white/95 p-2 shadow-2xl shadow-[#0d2430]/15 backdrop-blur"
+                role="listbox"
+                aria-label="Language"
+                data-i18n-aria-label="language.label"
               >
-                <span class="text-lg" aria-hidden="true">🇦🇱</span>
-                <span>Shqip</span>
-              </button>
-              <button
-                class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
-                type="button"
-                role="option"
-                data-language="en"
-              >
-                <span class="text-lg" aria-hidden="true">🇬🇧</span>
-                <span>English</span>
-              </button>
-              <button
-                class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
-                type="button"
-                role="option"
-                data-language="it"
-              >
-                <span class="text-lg" aria-hidden="true">🇮🇹</span>
-                <span>Italiano</span>
-              </button>
+                <button
+                  class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
+                  type="button"
+                  role="option"
+                  data-language="sq"
+                >
+                  <span class="text-lg" aria-hidden="true">🇦🇱</span>
+                  <span>Shqip</span>
+                </button>
+                <button
+                  class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
+                  type="button"
+                  role="option"
+                  data-language="en"
+                >
+                  <span class="text-lg" aria-hidden="true">🇬🇧</span>
+                  <span>English</span>
+                </button>
+                <button
+                  class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#17252f] transition hover:bg-[#f8f3ee]"
+                  type="button"
+                  role="option"
+                  data-language="it"
+                >
+                  <span class="text-lg" aria-hidden="true">🇮🇹</span>
+                  <span>Italiano</span>
+                </button>
+              </div>
             </div>
+
+            <button
+              id="mobileMenuToggle"
+              class="mobile-menu-toggle grid h-10 w-10 place-items-center rounded-full border border-[#d8c7b8] bg-white/85 text-[#0d2430] shadow-sm outline-none transition hover:-translate-y-0.5 hover:border-[#c9a47a] hover:bg-white focus:ring-4 focus:ring-[#c9a47a]/20 lg:hidden"
+              type="button"
+              aria-label="Open menu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+            >
+              <svg
+                class="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 7h14M5 12h14M5 17h14"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
           </div>
 
           <a
             href="#contact"
-            class="shine-button rounded-full bg-[#0d2430] px-5 py-3 text-xs font-bold uppercase tracking-widest text-white shadow-lg shadow-[#0d2430]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#173747]"
+            class="shine-button hidden rounded-full bg-[#0d2430] px-5 py-3 text-xs font-bold uppercase tracking-widest text-white shadow-lg shadow-[#0d2430]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#173747] sm:inline-flex"
             data-i18n="nav.book"
           >
             Book
           </a>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="glass-nav mobile-menu-panel mx-auto mt-2 hidden max-w-7xl rounded-2xl px-3 py-3 shadow-xl shadow-[#0d2430]/16 ring-1 ring-white/50 lg:hidden"
+        >
+          <div
+            class="grid gap-1 text-sm font-semibold uppercase tracking-[0.14em] text-[#51636b]"
+          >
+            <a
+              class="nav-link mobile-nav-link is-active"
+              href="#top"
+              data-nav-section="top"
+              data-i18n="nav.home"
+              >Home</a
+            >
+            <a
+              class="nav-link mobile-nav-link"
+              href="#about"
+              data-nav-section="about"
+              data-i18n="nav.about"
+              >About</a
+            >
+            <a
+              class="nav-link mobile-nav-link"
+              href="#services"
+              data-nav-section="services"
+              data-i18n="nav.services"
+              >Services</a
+            >
+            <a
+              class="nav-link mobile-nav-link"
+              href="#gallery"
+              data-nav-section="gallery"
+              data-i18n="nav.gallery"
+              >Gallery</a
+            >
+            <a
+              class="nav-link mobile-nav-link"
+              href="#reviews"
+              data-nav-section="reviews"
+              data-i18n="nav.reviews"
+              >Reviews</a
+            >
+            <a
+              class="nav-link mobile-nav-link"
+              href="#contact"
+              data-nav-section="contact"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+            <a
+              class="shine-button mt-2 rounded-full bg-[#0d2430] px-5 py-3 text-center text-xs font-bold uppercase tracking-widest text-white shadow-lg shadow-[#0d2430]/20 transition hover:bg-[#173747]"
+              href="#contact"
+              data-i18n="nav.book"
+              >Book</a
+            >
+          </div>
         </div>
       </nav>
 
@@ -630,6 +719,7 @@
             alt="Dental tools prepared for treatment"
             data-i18n-alt="alt.tools"
           /> -->
+        </div>
       </div>
     </section>
 
@@ -757,7 +847,9 @@
 
     <!-- CONTACT -->
     <section id="contact" class="bg-[#f8f3ee] py-24">
-      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8 items-center">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8 items-center"
+      >
         <div class="reveal">
           <p
             class="text-xs font-bold uppercase tracking-[0.25em] text-[#b78148]"
@@ -789,7 +881,9 @@
             <!-- <p class="rounded-xl bg-white/70 px-4 py-3 shadow-sm">
               📍 123 Smile Avenue, New York
             </p> -->
-            <div class="overflow-hidden rounded-2xl bg-white/70 shadow-sm ring-1 ring-[#0d2430]/5">
+            <div
+              class="overflow-hidden rounded-2xl bg-white/70 shadow-sm ring-1 ring-[#0d2430]/5"
+            >
               <div class="px-4 py-3 text-[#53666e]">
                 📍 Rruga Veledin Kollozi, Vlore, Albania
               </div>
@@ -798,7 +892,7 @@
                 loading="lazy"
                 allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.663033546359!2d19.488405196864413!3d40.46439763665655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453313054fa5c7%3A0x424b8591634cc0d6!2sLotus%20Clinic%20Dental!5e0!3m2!1sen!2s!4v1781794265317!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.663033546359!2d19.488405196864413!3d40.46439763665655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453313054fa5c7%3A0x424b8591634cc0d6!2sLotus%20Clinic%20Dental!5e0!3m2!1sen!2s!4v1781794265317!5m2!1sen!2s"
               ></iframe>
             </div>
           </div>
@@ -910,6 +1004,47 @@
       </div>
     </footer>
 
+    <a
+      href="#top"
+      class="floating-action floating-top"
+      aria-label="Back to top"
+    >
+      <svg
+        class="h-6 w-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <a
+      href="https://wa.me/355698422428"
+      class="floating-action floating-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <span class="floating-whatsapp-ring" aria-hidden="true"></span>
+      <svg
+        class="relative h-7 w-7"
+        viewBox="0 0 32 32"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M16.01 3.5A12.35 12.35 0 0 0 5.33 22.08L3.8 28.5l6.58-1.49A12.36 12.36 0 1 0 16.01 3.5Zm0 22.46a10.1 10.1 0 0 1-5.15-1.41l-.37-.22-3.9.88.9-3.78-.25-.39A10.1 10.1 0 1 1 16 25.96Zm5.57-7.56c-.3-.15-1.78-.88-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.68-1.64-.93-2.25-.24-.59-.49-.5-.68-.51h-.58c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.31.17-1.43-.07-.13-.27-.2-.57-.35Z"
+        />
+      </svg>
+    </a>
+
     <!-- <div
       id="videoModal"
       class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 p-5"
@@ -938,35 +1073,35 @@
       </div>
     </div> -->
     <div
-  id="videoModal"
-  class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 p-3 md:p-5"
->
-  <button
-    id="closeVideoModal"
-    type="button"
-    class="absolute right-3 top-3 md:right-5 md:top-5 grid h-11 w-11 place-items-center rounded-full bg-white text-2xl text-[#0d2430] shadow-lg"
-  >
-    ×
-  </button>
+      id="videoModal"
+      class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 p-3 md:p-5"
+    >
+      <button
+        id="closeVideoModal"
+        type="button"
+        class="absolute right-3 top-3 md:right-5 md:top-5 grid h-11 w-11 place-items-center rounded-full bg-white text-2xl text-[#0d2430] shadow-lg"
+      >
+        ×
+      </button>
 
-  <div
-    class="h-[75vh] w-[95vw] overflow-hidden rounded-3xl bg-black/70 shadow-2xl md:h-[80vh] md:w-[70vw]"
-  >
-    <video
-      id="modalVideo"
-      class="hidden h-full w-full object-contain"
-      controls
-      playsinline
-      preload="metadata"
-    ></video>
+      <div
+        class="h-[75vh] w-[95vw] overflow-hidden rounded-3xl bg-black/70 shadow-2xl md:h-[80vh] md:w-[70vw]"
+      >
+        <video
+          id="modalVideo"
+          class="hidden h-full w-full object-contain"
+          controls
+          playsinline
+          preload="metadata"
+        ></video>
 
-    <img
-      id="modalImage"
-      class="hidden h-full w-full object-contain"
-      alt=""
-    />
-  </div>
-</div>
+        <img
+          id="modalImage"
+          class="hidden h-full w-full object-contain"
+          alt=""
+        />
+      </div>
+    </div>
 
     <script src="./locales/translations.js"></script>
     <script type="module" src="./app.js"></script>
