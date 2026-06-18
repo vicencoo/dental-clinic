@@ -1,35 +1,5 @@
-const videoAssets = [
-  {
-    id: 1,
-    poster: "/public/images/dental-9.webp",
-    videoSrc: "/public/videos/video-1.mp4",
-  },
-  {
-    id: 2,
-    poster: "/public/images/dental-10.png",
-    videoSrc: "/public/videos/video-2.mp4",
-  },
-  {
-    id: 3,
-    poster: "/public/images/dental-11.webp",
-    videoSrc: "/public/videos/video-3.mp4",
-  },
-  {
-    id: 4,
-    poster: "/public/images/dental-12.webp",
-    videoSrc: "/public/videos/video-4.mp4",
-  },
-  {
-    id: 5,
-    poster: "/public/images/dental-8.webp",
-    videoSrc: "/public/videos/video-5.mp4",
-  },
-  {
-    id: 6,
-    poster: "/public/images/dental-2.webp",
-    videoSrc: "/public/videos/video-2.mp4",
-  },
-];
+import { gallery } from "./src/constants/gallery.js";
+import { videoAssets } from "./src/constants/videoAssets.js";
 
 const translations = window.LOTUS_TRANSLATIONS || {};
 let currentLanguage = localStorage.getItem("luminaLanguage") || "sq";
@@ -37,6 +7,7 @@ let reviews = [];
 let videos = [];
 
 const revealItems = document.querySelectorAll(".reveal");
+const galleryWrapper = document.getElementById("gallery-wrapper");
 const videosWrapper = document.getElementById("videos-wrapper");
 const languageSelector = document.getElementById("languageSelector");
 const languageToggle = document.getElementById("languageToggle");
@@ -45,10 +16,42 @@ const languageFlag = document.getElementById("languageFlag");
 const languageCode = document.getElementById("languageCode");
 const languageOptions = document.querySelectorAll("[data-language]");
 
+const videoModal = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modalVideo");
+const modalImage = document.getElementById("modalImage");
+const closeVideoModal = document.getElementById("closeVideoModal");
+
 const languageMeta = {
   sq: { code: "SQ", flag: "🇦🇱" },
   en: { code: "EN", flag: "🇬🇧" },
   it: { code: "IT", flag: "🇮🇹" },
+};
+
+const observeRevealItems = (items) => {
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px",
+    },
+  );
+
+  items.forEach((item, index) => {
+    item.style.transitionDelay = `${Math.min(index % 3, 2) * 100}ms`;
+    observer.observe(item);
+  });
 };
 
 const translate = (key) =>
@@ -260,6 +263,40 @@ reviewsCarousel?.addEventListener("pointercancel", () => {
   swipeDeltaX = 0;
 });
 
+const renderImages = () => {
+  if (!galleryWrapper) return;
+
+  galleryWrapper.innerHTML = gallery
+    .map(
+      (image) => `
+        <img
+          src="${image.src}"
+          class="reveal h-80 w-full rounded-4xl object-cover shadow-lg cursor-zoom-in transition-transform duration-500 hover:-translate-y-2 hover:scale-[1.02] will-change-transform ${image.lower ? "md:mt-10" : ""}"
+          alt="${image.alt}"
+          data-i18n-alt="alt.tools"
+          data-image-id="${image.id}"
+        />
+      `,
+    )
+    .join("");
+
+  observeRevealItems(galleryWrapper.querySelectorAll(".reveal"));
+
+  document.querySelectorAll("[data-image-id]").forEach((img) => {
+    img.addEventListener("click", () => {
+      //   const image = gallery[Number(img.dataset.imageId)];
+      const image = gallery.find(
+        (item) => item.id === Number(img.dataset.imageId),
+      );
+      console.log("Image id:", image);
+      modalImage.classList.remove("hidden");
+      modalImage.src = image.src;
+      videoModal.classList.remove("hidden");
+      videoModal.classList.add("flex");
+    });
+  });
+};
+
 const renderVideos = () => {
   if (!videosWrapper) return;
 
@@ -302,6 +339,7 @@ const renderVideos = () => {
     card.addEventListener("click", () => {
       const video = videos[Number(card.dataset.videoIndex)];
 
+      modalVideo.classList.remove("hidden");
       modalVideo.src = video.videoSrc;
       videoModal.classList.remove("hidden");
       videoModal.classList.add("flex");
@@ -310,13 +348,12 @@ const renderVideos = () => {
   });
 };
 
-const videoModal = document.getElementById("videoModal");
-const modalVideo = document.getElementById("modalVideo");
-const closeVideoModal = document.getElementById("closeVideoModal");
-
 closeVideoModal?.addEventListener("click", () => {
   modalVideo.pause();
+  modalImage.classList.add("hidden");
+  modalVideo.classList.add("hidden");
   modalVideo.src = "";
+  modalImage.src = "";
   videoModal.classList.add("hidden");
   videoModal.classList.remove("flex");
 });
@@ -389,5 +426,7 @@ document.addEventListener("keydown", (event) => {
     closeLanguageMenu();
   }
 });
+
+renderImages();
 
 applyLanguage(currentLanguage);

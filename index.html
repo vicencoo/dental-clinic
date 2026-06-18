@@ -623,46 +623,13 @@
           </h2>
         </div>
 
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <img
+        <div class="mt-12 grid gap-6 md:grid-cols-3" id="gallery-wrapper">
+          <!-- <img
             src="/public/images/dental-3.jpg"
             class="reveal h-80 w-full rounded-4xl object-cover shadow-lg hover:-translate-y-2 hover:scale-[1.02] transform transition-transform duration-500"
             alt="Dental tools prepared for treatment"
             data-i18n-alt="alt.tools"
-          />
-          <img
-            src="/public/images/dental-4.webp"
-            class="reveal h-80 w-full rounded-4xl object-cover shadow-lg transition duration-500 hover:-translate-y-2 hover:scale-[1.02] md:mt-10"
-            alt="Bright dental chair and clinic room"
-            data-i18n-alt="alt.room"
-          />
-          <img
-            src="/public/images/dental-5.jpg"
-            class="reveal h-80 w-full rounded-4xl object-cover shadow-lg transition duration-500 hover:-translate-y-2 hover:scale-[1.02]"
-            alt="Dentist treating a patient"
-            data-i18n-alt="alt.patient"
-          />
-        </div>
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <img
-            src="/public/images/dental-6.webp"
-            class="reveal h-80 w-full rounded-4xl object-cover shadow-lg transition duration-500 hover:-translate-y-2 hover:scale-[1.02] md:mt-10"
-            alt="Dental tools prepared for treatment"
-            data-i18n-alt="alt.tools"
-          />
-          <img
-            src="/public/images/dental-7.jpg"
-            class="reveal h-80 w-full rounded-4xl object-cover shadow-lg transition duration-500 hover:-translate-y-2 hover:scale-[1.02]"
-            alt="Bright dental chair and clinic room"
-            data-i18n-alt="alt.room"
-          />
-          <img
-            src="/public/images/dental-8.webp"
-            class="reveal h-80 w-full rounded-4xl object-cover shadow-lg transition duration-500 hover:-translate-y-2 hover:scale-[1.02] md:mt-10"
-            alt="Dentist treating a patient"
-            data-i18n-alt="alt.patient"
-          />
-        </div>
+          /> -->
       </div>
     </section>
 
@@ -790,7 +757,7 @@
 
     <!-- CONTACT -->
     <section id="contact" class="bg-[#f8f3ee] py-24">
-      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8 items-center">
         <div class="reveal">
           <p
             class="text-xs font-bold uppercase tracking-[0.25em] text-[#b78148]"
@@ -814,21 +781,33 @@
 
           <div class="mt-8 space-y-3 text-[#53666e]">
             <p class="rounded-xl bg-white/70 px-4 py-3 shadow-sm">
-              ☎ (123) 456-7890
+              ☎ +355 69 842 2428
             </p>
             <p class="rounded-xl bg-white/70 px-4 py-3 shadow-sm">
               ✉ info@luminadental.com
             </p>
-            <p class="rounded-xl bg-white/70 px-4 py-3 shadow-sm">
+            <!-- <p class="rounded-xl bg-white/70 px-4 py-3 shadow-sm">
               📍 123 Smile Avenue, New York
-            </p>
+            </p> -->
+            <div class="overflow-hidden rounded-2xl bg-white/70 shadow-sm ring-1 ring-[#0d2430]/5">
+              <div class="px-4 py-3 text-[#53666e]">
+                📍 Rruga Veledin Kollozi, Vlore, Albania
+              </div>
+              <iframe
+                class="h-64 w-full border-0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.663033546359!2d19.488405196864413!3d40.46439763665655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13453313054fa5c7%3A0x424b8591634cc0d6!2sLotus%20Clinic%20Dental!5e0!3m2!1sen!2s!4v1781794265317!5m2!1sen!2s"
+              ></iframe>
+            </div>
           </div>
         </div>
 
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
-          class="reveal rounded-4xl bg-white p-8 shadow-2xl shadow-[#0d2430]/10 ring-1 ring-[#0d2430]/5"
+          class="reveal flex flex-col h-fit gap-5 rounded-4xl bg-white p-8 shadow-2xl shadow-[#0d2430]/10 ring-1 ring-[#0d2430]/5"
         >
           <!-- Web3Forms Access Key -->
           <input
@@ -867,12 +846,12 @@
             name="email"
             type="email"
             required
-            class="mt-5 w-full rounded-xl border border-gray-200 bg-[#fbfaf8] p-4 outline-none transition focus:border-[#c9a47a] focus:bg-white focus:ring-4 focus:ring-[#c9a47a]/15"
+            class="w-full rounded-xl border border-gray-200 bg-[#fbfaf8] p-4 outline-none transition focus:border-[#c9a47a] focus:bg-white focus:ring-4 focus:ring-[#c9a47a]/15"
             placeholder="Email Address"
             data-i18n-placeholder="form.email"
           />
 
-          <div class="mt-5 grid gap-5 md:grid-cols-2">
+          <div class="grid gap-5 md:grid-cols-2">
             <input
               name="preferred_date"
               type="date"
@@ -890,7 +869,7 @@
 
           <textarea
             name="message"
-            class="mt-5 h-32 w-full rounded-xl border border-gray-200 bg-[#fbfaf8] p-4 outline-none transition focus:border-[#c9a47a] focus:bg-white focus:ring-4 focus:ring-[#c9a47a]/15"
+            class="h-32 w-full rounded-xl border border-gray-200 bg-[#fbfaf8] p-4 outline-none transition focus:border-[#c9a47a] focus:bg-white focus:ring-4 focus:ring-[#c9a47a]/15"
             placeholder="Message"
             data-i18n-placeholder="form.message"
           ></textarea>
@@ -949,15 +928,17 @@
       >
         <video
           id="modalVideo"
-          class="h-full w-full object-contain"
+          class="hidden h-full w-full object-contain"
           controls
           playsinline
           preload="metadata"
         ></video>
+
+        <img  id="modalImage" class="hidden w-full h-full object-contain">
       </div>
     </div>
 
     <script src="./locales/translations.js"></script>
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
