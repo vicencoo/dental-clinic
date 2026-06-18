@@ -910,7 +910,7 @@
       </div>
     </footer>
 
-    <div
+    <!-- <div
       id="videoModal"
       class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 p-5"
     >
@@ -924,7 +924,7 @@
 
       <div
         style="width: 70vw; height: 80vh"
-        class="overflow-hidden rounded-3xl bg-black shadow-2xl"
+        class="overflow-hidden rounded-3xl bg-black/70 shadow-2xl"
       >
         <video
           id="modalVideo"
@@ -936,7 +936,37 @@
 
         <img  id="modalImage" class="hidden w-full h-full object-contain">
       </div>
-    </div>
+    </div> -->
+    <div
+  id="videoModal"
+  class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 p-3 md:p-5"
+>
+  <button
+    id="closeVideoModal"
+    type="button"
+    class="absolute right-3 top-3 md:right-5 md:top-5 grid h-11 w-11 place-items-center rounded-full bg-white text-2xl text-[#0d2430] shadow-lg"
+  >
+    ×
+  </button>
+
+  <div
+    class="h-[75vh] w-[95vw] overflow-hidden rounded-3xl bg-black/70 shadow-2xl md:h-[80vh] md:w-[70vw]"
+  >
+    <video
+      id="modalVideo"
+      class="hidden h-full w-full object-contain"
+      controls
+      playsinline
+      preload="metadata"
+    ></video>
+
+    <img
+      id="modalImage"
+      class="hidden h-full w-full object-contain"
+      alt=""
+    />
+  </div>
+</div>
 
     <script src="./locales/translations.js"></script>
     <script type="module" src="./app.js"></script>

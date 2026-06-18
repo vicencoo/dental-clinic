@@ -227,6 +227,9 @@
   .top-0 {
     top: 0;
   }
+  .top-3 {
+    top: calc(var(--spacing) * 3);
+  }
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
@@ -247,6 +250,9 @@
   }
   .right-0 {
     right: 0;
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
   }
   .right-5 {
     right: calc(var(--spacing) * 5);
@@ -282,6 +288,9 @@
     z-index: 70;
   }
   .z-9999 {
+    z-index: 9999;
+  }
+  .z-\[9999\] {
     z-index: 9999;
   }
   .mx-auto {
@@ -404,6 +413,9 @@
   .h-125 {
     height: calc(var(--spacing) * 125);
   }
+  .h-\[75vh\] {
+    height: 75vh;
+  }
   .h-fit {
     height: fit-content;
   }
@@ -454,6 +466,9 @@
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
+  }
+  .w-\[95vw\] {
+    width: 95vw;
   }
   .w-fit {
     width: fit-content;
@@ -674,11 +689,20 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-black\/70 {
+    background-color: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
   .bg-black\/80 {
     background-color: color-mix(in srgb, #000 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
     }
+  }
+  .bg-transparent {
+    background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1335,6 +1359,16 @@
       padding-inline: calc(var(--spacing) * 5);
     }
   }
+  .md\:top-5 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:right-5 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 5);
+    }
+  }
   .md\:mt-10 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 10);
@@ -1350,6 +1384,11 @@
       height: calc(var(--spacing) * 155);
     }
   }
+  .md\:h-\[80vh\] {
+    @media (width >= 48rem) {
+      height: 80vh;
+    }
+  }
   .md\:min-h-70 {
     @media (width >= 48rem) {
       min-height: calc(var(--spacing) * 70);
@@ -1358,6 +1397,11 @@
   .md\:min-h-86 {
     @media (width >= 48rem) {
       min-height: calc(var(--spacing) * 86);
+    }
+  }
+  .md\:w-\[70vw\] {
+    @media (width >= 48rem) {
+      width: 70vw;
     }
   }
   .md\:grid-cols-2 {
@@ -1393,6 +1437,11 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:p-5 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 5);
     }
   }
   .md\:p-10 {
