@@ -9,6 +9,16 @@ let videos = [];
 const revealItems = document.querySelectorAll(".reveal");
 const galleryWrapper = document.getElementById("gallery-wrapper");
 const videosWrapper = document.getElementById("videos-wrapper");
+const counters = document.querySelectorAll("[data-counter]");
+const i18nElements = document.querySelectorAll("[data-i18n]");
+const i18nPlaceholderElements = document.querySelectorAll(
+  "[data-i18n-placeholder]",
+);
+const i18nAltElements = document.querySelectorAll("[data-i18n-alt]");
+const i18nAriaLabelElements = document.querySelectorAll(
+  "[data-i18n-aria-label]",
+);
+const i18nValueElements = document.querySelectorAll("[data-i18n-value]");
 const languageSelector = document.getElementById("languageSelector");
 const languageToggle = document.getElementById("languageToggle");
 const languageMenu = document.getElementById("languageMenu");
@@ -22,6 +32,8 @@ const navLinks = document.querySelectorAll("[data-nav-section]");
 const navSections = document.querySelectorAll(
   "#top, #about, #services, #gallery, #reviews, #contact",
 );
+const backToTopButton = document.getElementById("backToTopButton");
+const whatsappButton = document.getElementById("whatsappButton");
 
 const videoModal = document.getElementById("videoModal");
 const modalVideo = document.getElementById("modalVideo");
@@ -65,11 +77,15 @@ const translate = (key) =>
   translations[currentLanguage]?.[key] || translations.en[key] || key;
 
 const closeLanguageMenu = () => {
+  if (languageMenu?.classList.contains("hidden")) return;
+
   languageMenu?.classList.add("hidden");
   languageToggle?.setAttribute("aria-expanded", "false");
 };
 
 const openLanguageMenu = () => {
+  if (!languageMenu?.classList.contains("hidden")) return;
+
   languageMenu?.classList.remove("hidden");
   languageToggle?.setAttribute("aria-expanded", "true");
 };
@@ -83,12 +99,16 @@ const toggleLanguageMenu = () => {
 };
 
 const closeMobileMenu = () => {
+  if (mobileMenu?.classList.contains("hidden")) return;
+
   mobileMenu?.classList.add("hidden");
   mobileMenuToggle?.classList.remove("is-open");
   mobileMenuToggle?.setAttribute("aria-expanded", "false");
 };
 
 const openMobileMenu = () => {
+  if (!mobileMenu?.classList.contains("hidden")) return;
+
   mobileMenu?.classList.remove("hidden");
   mobileMenuToggle?.classList.add("is-open");
   mobileMenuToggle?.setAttribute("aria-expanded", "true");
@@ -143,6 +163,58 @@ const getActiveSectionId = () => {
 
 const syncActiveNav = () => {
   updateActiveNav(getActiveSectionId());
+};
+
+const updateBackToTopVisibility = () => {
+  const shouldShow = window.scrollY > 420;
+
+  backToTopButton?.classList.toggle("is-visible", shouldShow);
+  backToTopButton?.classList.toggle("is-hidden", !shouldShow);
+};
+
+const updateWhatsappLink = () => {
+  if (!whatsappButton) return;
+
+  const message = translate("whatsapp.message");
+  whatsappButton.href = `https://wa.me/355698422428?text=${encodeURIComponent(message)}`;
+};
+
+const formatCounterValue = (value, decimals, suffix) => {
+  const formattedValue =
+    decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
+
+  return `${formattedValue}${suffix}`;
+};
+
+const animateCounter = (counter) => {
+  const target = Number(counter.dataset.counterTarget || 0);
+  const decimals = Number(counter.dataset.counterDecimals || 0);
+  const suffix = counter.dataset.counterSuffix || "";
+  const duration = 1600;
+  const startTime = performance.now();
+
+  const tick = (currentTime) => {
+    const progress = Math.min((currentTime - startTime) / duration, 1);
+    const easedProgress = 1 - Math.pow(1 - progress, 3);
+    const currentValue = target * easedProgress;
+
+    counter.textContent = formatCounterValue(currentValue, decimals, suffix);
+
+    if (progress < 1) {
+      window.requestAnimationFrame(tick);
+    }
+  };
+
+  window.requestAnimationFrame(tick);
+};
+
+const startCounters = () => {
+  counters.forEach((counter) => {
+    if (counter.dataset.counterStarted === "true") return;
+
+    counter.dataset.counterStarted = "true";
+    animateCounter(counter);
+  });
 };
 
 if ("IntersectionObserver" in window) {
@@ -322,6 +394,8 @@ const renderImages = () => {
       (image) => `
         <img
           src="${image.src}"
+          loading="lazy"
+          decoding="async"
           class="reveal h-80 w-full rounded-4xl object-cover shadow-lg cursor-zoom-in transition-transform duration-500 hover:-translate-y-2 hover:scale-[1.02] will-change-transform ${image.lower ? "md:mt-10" : ""}"
           alt="${image.alt}"
           data-i18n-alt="alt.tools"
@@ -339,7 +413,6 @@ const renderImages = () => {
       const image = gallery.find(
         (item) => item.id === Number(img.dataset.imageId),
       );
-      console.log("Image id:", image);
       modalImage.classList.remove("hidden");
       modalImage.src = image.src;
       videoModal.classList.remove("hidden");
@@ -348,8 +421,28 @@ const renderImages = () => {
   });
 };
 
+const updateVideoCards = () => {
+  document.querySelectorAll("[data-video-index]").forEach((card) => {
+    const video = videos[Number(card.dataset.videoIndex)];
+    if (!video) return;
+
+    const poster = card.querySelector("[data-video-poster]");
+    const title = card.querySelector("[data-video-title]");
+    const text = card.querySelector("[data-video-text]");
+
+    if (poster) poster.alt = video.title;
+    if (title) title.textContent = video.title;
+    if (text) text.textContent = video.text;
+  });
+};
+
 const renderVideos = () => {
   if (!videosWrapper) return;
+
+  if (videosWrapper.children.length) {
+    updateVideoCards();
+    return;
+  }
 
   videosWrapper.innerHTML = videos
     .map(
@@ -363,6 +456,9 @@ const renderVideos = () => {
             <img
               src="${video.poster}"
               alt="${video.title}"
+              loading="lazy"
+              decoding="async"
+              data-video-poster
               class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
             />
 
@@ -376,8 +472,8 @@ const renderVideos = () => {
           </div>
 
           <div class="flex h-28 flex-col justify-between p-4">
-            <h3 class="font-serif text-xl">${video.title}</h3>
-            <p class="mt-2 text-sm leading-6 text-[#65757b]">
+            <h3 class="font-serif text-xl" data-video-title>${video.title}</h3>
+            <p class="mt-2 text-sm leading-6 text-[#65757b]" data-video-text>
               ${video.text}
             </p>
           </div>
@@ -418,22 +514,23 @@ const applyLanguage = (language) => {
   localStorage.setItem("luminaLanguage", currentLanguage);
 
   updateLanguageButton();
+  updateWhatsappLink();
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
+  i18nElements.forEach((element) => {
     element.textContent =
       dictionary[element.dataset.i18n] || element.textContent;
   });
 
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+  i18nPlaceholderElements.forEach((element) => {
     element.placeholder =
       dictionary[element.dataset.i18nPlaceholder] || element.placeholder;
   });
 
-  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+  i18nAltElements.forEach((element) => {
     element.alt = dictionary[element.dataset.i18nAlt] || element.alt;
   });
 
-  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+  i18nAriaLabelElements.forEach((element) => {
     element.setAttribute(
       "aria-label",
       dictionary[element.dataset.i18nAriaLabel] ||
@@ -441,7 +538,7 @@ const applyLanguage = (language) => {
     );
   });
 
-  document.querySelectorAll("[data-i18n-value]").forEach((element) => {
+  i18nValueElements.forEach((element) => {
     element.value = dictionary[element.dataset.i18nValue] || element.value;
   });
 
@@ -477,7 +574,10 @@ let activeNavFrame;
 
 const queueActiveNavSync = () => {
   window.cancelAnimationFrame(activeNavFrame);
-  activeNavFrame = window.requestAnimationFrame(syncActiveNav);
+  activeNavFrame = window.requestAnimationFrame(() => {
+    syncActiveNav();
+    updateBackToTopVisibility();
+  });
 };
 
 window.addEventListener("scroll", queueActiveNavSync, { passive: true });
@@ -485,6 +585,11 @@ window.addEventListener("resize", queueActiveNavSync);
 
 languageOptions.forEach((option) => {
   option.addEventListener("click", () => {
+    if (option.dataset.language === currentLanguage) {
+      closeLanguageMenu();
+      return;
+    }
+
     applyLanguage(option.dataset.language);
     closeLanguageMenu();
   });
@@ -512,5 +617,7 @@ document.addEventListener("keydown", (event) => {
 
 renderImages();
 syncActiveNav();
+updateBackToTopVisibility();
+startCounters();
 
 applyLanguage(currentLanguage);

@@ -19,7 +19,9 @@
         class="pointer-events-none absolute right-0 top-24 h-96 w-96 rounded-full bg-[#c9a47a]/20 blur-3xl"
       ></div>
 
-      <nav class="fixed left-0 right-0 top-0 z-50 px-2.5 py-2.5 sm:px-5 sm:py-3">
+      <nav
+        class="fixed left-0 right-0 top-0 z-50 px-2.5 py-2.5 sm:px-5 sm:py-3"
+      >
         <div
           class="glass-nav mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-2xl px-3 py-3 ring-1 ring-white/60 sm:px-5 sm:py-4 lg:px-8"
         >
@@ -311,7 +313,14 @@
 
           <div class="mt-11 grid max-w-lg grid-cols-3 gap-4">
             <div>
-              <p class="font-serif text-3xl text-[#0d2430]">12k+</p>
+              <p
+                class="font-serif text-3xl text-[#0d2430]"
+                data-counter
+                data-counter-target="12"
+                data-counter-suffix="k+"
+              >
+                0
+              </p>
               <p
                 class="mt-1 text-xs uppercase tracking-widest text-[#7d8b91]"
                 data-i18n="stats.smiles"
@@ -320,7 +329,13 @@
               </p>
             </div>
             <div>
-              <p class="font-serif text-3xl text-[#0d2430]">18</p>
+              <p
+                class="font-serif text-3xl text-[#0d2430]"
+                data-counter
+                data-counter-target="18"
+              >
+                0
+              </p>
               <p
                 class="mt-1 text-xs uppercase tracking-widest text-[#7d8b91]"
                 data-i18n="stats.years"
@@ -329,7 +344,14 @@
               </p>
             </div>
             <div>
-              <p class="font-serif text-3xl text-[#0d2430]">4.9</p>
+              <p
+                class="font-serif text-3xl text-[#0d2430]"
+                data-counter
+                data-counter-target="4.9"
+                data-counter-decimals="1"
+              >
+                0
+              </p>
               <p
                 class="mt-1 text-xs uppercase tracking-widest text-[#7d8b91]"
                 data-i18n="stats.rating"
@@ -372,6 +394,8 @@
             src="/public/images/dental-1.webp"
             alt="Modern dental treatment room"
             data-i18n-alt="alt.hero"
+            decoding="async"
+            fetchpriority="high"
             class="h-110 w-full rounded-4xl object-cover shadow-2xl shadow-[#0d2430]/20 ring-1 ring-white/70 transition duration-700 hover:scale-[1.015] md:h-155"
           />
         </div>
@@ -487,6 +511,8 @@
           </div>
           <img
             src="/public/images/dental-2.webp"
+            loading="lazy"
+            decoding="async"
             class="h-125 w-full rounded-4xl object-cover shadow-2xl shadow-[#0d2430]/10"
             alt="Dental office"
             data-i18n-alt="alt.office"
@@ -1005,16 +1031,12 @@
     </footer>
 
     <a
+      id="backToTopButton"
       href="#top"
-      class="floating-action floating-top"
+      class="floating-action floating-top is-hidden"
       aria-label="Back to top"
     >
-      <svg
-        class="h-6 w-6"
-        viewBox="0 0 24 24"
-        fill="none"
-        aria-hidden="true"
-      >
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path
           d="M12 19V5M5 12l7-7 7 7"
           stroke="currentColor"
@@ -1026,6 +1048,7 @@
     </a>
 
     <a
+      id="whatsappButton"
       href="https://wa.me/355698422428"
       class="floating-action floating-whatsapp"
       target="_blank"

@@ -88,6 +88,8 @@ window.LOTUS_TRANSLATIONS = {
     "form.email": "Adresa e emailit",
     "form.message": "Mesazhi",
     "form.submit": "Rezervo takim",
+    "whatsapp.message":
+      "Pershendetje Lotus Clinic Dental, dua te rezervoj nje takim. Mund te me ndihmoni ju lutem?",
     "footer.rights": "© 2026 Lotus Clinic Dental. Te gjitha te drejtat e rezervuara.",
     "footer.privacy": "Politika e privatesise",
     "footer.terms": "Kushtet e sherbimit",
@@ -224,6 +226,8 @@ window.LOTUS_TRANSLATIONS = {
     "form.email": "Email Address",
     "form.message": "Message",
     "form.submit": "Book Appointment",
+    "whatsapp.message":
+      "Hello Lotus Clinic Dental, I would like to book an appointment. Could you please help me?",
     "footer.rights": "© 2026 Lotus Clinic Dental. All rights reserved.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
@@ -361,6 +365,8 @@ window.LOTUS_TRANSLATIONS = {
     "form.email": "Indirizzo email",
     "form.message": "Messaggio",
     "form.submit": "Prenota appuntamento",
+    "whatsapp.message":
+      "Buongiorno Lotus Clinic Dental, vorrei prenotare un appuntamento. Potete aiutarmi per favore?",
     "footer.rights": "© 2026 Lotus Clinic Dental. Tutti i diritti riservati.",
     "footer.privacy": "Informativa sulla privacy",
     "footer.terms": "Termini di servizio",

@@ -91,6 +91,13 @@ button {
   transform: translateY(-1px) rotate(2deg);
 }
 
+.mobile-menu-panel {
+  backface-visibility: hidden;
+  contain: layout paint;
+  transform-origin: top center;
+  will-change: opacity, transform;
+}
+
 .mobile-menu-panel:not(.hidden) {
   animation: mobile-menu-enter 0.26s ease both;
 }
@@ -161,6 +168,19 @@ button {
     transform 0.25s ease,
     box-shadow 0.25s ease,
     filter 0.25s ease;
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+}
+
+.floating-action.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(14px) scale(0.92);
+}
+
+.floating-action.is-visible {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .floating-action:hover {
