@@ -4,7 +4,10 @@ import { renderReviews, setReviewsData } from "./reviews.js";
 import { renderVideos } from "./videos.js";
 
 const translations = window.LOTUS_TRANSLATIONS || {};
-let currentLanguage = localStorage.getItem("luminaLanguage") || "sq";
+const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+let currentLanguage = translations[urlLanguage]
+  ? urlLanguage
+  : localStorage.getItem("luminaLanguage") || "sq";
 let reviews = [];
 let videos = [];
 
@@ -58,6 +61,17 @@ const languageFlagImages = {
   es: "/public/flags/spain.png",
   de: "/public/flags/german.png",
 };
+
+const languageLocales = {
+  sq: "sq_AL",
+  en: "en_US",
+  it: "it_IT",
+  fr: "fr_FR",
+  es: "es_ES",
+  de: "de_DE",
+};
+
+const siteUrl = "https://lotusdental.al/";
 
 const translate = (key) =>
   translations[currentLanguage]?.[key] || translations.en[key] || key;
@@ -173,6 +187,63 @@ const updateWhatsappLink = () => {
   whatsappButton.href = `https://wa.me/355698422428?text=${encodeURIComponent(message)}`;
 };
 
+const setMetaContent = (selector, value) => {
+  const element = document.querySelector(selector);
+
+  if (element && value) {
+    element.setAttribute("content", value);
+  }
+};
+
+const getLanguageUrl = (language) => {
+  const url = new URL(siteUrl);
+
+  if (language !== "sq") {
+    url.searchParams.set("lang", language);
+  }
+
+  return url.toString();
+};
+
+const syncLanguageUrl = () => {
+  if (!window.history?.replaceState) return;
+
+  const url = new URL(window.location.href);
+
+  if (currentLanguage === "sq") {
+    url.searchParams.delete("lang");
+  } else {
+    url.searchParams.set("lang", currentLanguage);
+  }
+
+  window.history.replaceState(
+    {},
+    "",
+    `${url.pathname}${url.search}${url.hash}`,
+  );
+};
+
+const updateDocumentMeta = () => {
+  const title = translate("meta.title");
+  const description = translate("meta.description");
+  const languageUrl = getLanguageUrl(currentLanguage);
+
+  document.title = title;
+  document
+    .querySelector('link[rel="canonical"]')
+    ?.setAttribute("href", languageUrl);
+  setMetaContent('meta[name="description"]', description);
+  setMetaContent('meta[property="og:title"]', title);
+  setMetaContent('meta[property="og:description"]', description);
+  setMetaContent('meta[property="og:url"]', languageUrl);
+  setMetaContent('meta[name="twitter:title"]', title);
+  setMetaContent('meta[name="twitter:description"]', description);
+  setMetaContent(
+    'meta[property="og:locale"]',
+    languageLocales[currentLanguage] || languageLocales.en,
+  );
+};
+
 const formatCounterValue = (value, decimals, suffix) => {
   const formattedValue =
     decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
@@ -258,7 +329,8 @@ const applyLanguage = (language) => {
   const dictionary = translations[currentLanguage];
 
   document.documentElement.lang = currentLanguage;
-  document.title = translate("meta.title");
+  syncLanguageUrl();
+  updateDocumentMeta();
   localStorage.setItem("luminaLanguage", currentLanguage);
 
   updateLanguageButton();

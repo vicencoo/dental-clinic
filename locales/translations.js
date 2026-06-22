@@ -1,6 +1,8 @@
 window.LOTUS_TRANSLATIONS = {
   sq: {
-    "meta.title": "Lotus Clinic Dental",
+    "meta.title": "Lotus Clinic Dental | Dentist në Vlorë, Shqipëri",
+    "meta.description":
+      "Lotus Clinic Dental në Vlorë ofron kujdes dentar modern, dentistri estetike, implante dentare, ortodonci, zbardhim dhëmbësh, trajtim kanali, dentistri pediatrike dhe kujdes emergjent.",
     "language.label": "Gjuha",
     "brand.subtitle": "CLINIC DENTAL",
     "nav.home": "Kreu",
@@ -60,8 +62,7 @@ window.LOTUS_TRANSLATIONS = {
     "about.patientFlowText":
       "Ne shpjegojmë çdo hap qartë, që pacientët të dinë çfarë të presin para, gjatë dhe pas trajtimit.",
     "doctor.eyebrow": "Njihuni me doktoreshën",
-    "doctor.title":
-      "Dr. Anxhela, e fokusuar në dentistri të saktë dhe të butë",
+    "doctor.title": "Dr. Anxhela, e fokusuar në dentistri të saktë dhe të butë",
     "doctor.text":
       "Doktoresha kombinon diagnozën e kujdesshme, komunikimin e qartë dhe planifikimin modern të trajtimit për ta bërë çdo pacient të ndihet i informuar dhe komod.",
     "doctor.text2":
@@ -131,44 +132,6 @@ window.LOTUS_TRANSLATIONS = {
     "alt.patient": "Dentist duke trajtuar nje pacient",
     "alt.doctor": "Doktoresha në Lotus Clinic Dental",
     "alt.certification": "Foto provizore e certifikimit dentar",
-    // reviews: [
-    //   {
-    //     name: "Debbie S.",
-    //     text: "I had a filling fall out and she got me in right away. Very clean and professional. I highly recommend and I will be back in a few days for my cleaning. Amazing.",
-    //     // treatment: "Kujdes i përgjithshëm",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Xhesi Shkëmbi",
-    //     text: "I’m very pleased with the service provided by Dr. Anxhela. She is professional, kind, and explains every step of the process in detail, which makes you feel informed and at ease. Her positive energy and warm approach truly make a difference. The clinic is very clean and welcoming. Highly recommended!",
-    //     // treatment: "Transformim buzëqeshjeje",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Besjana Beke",
-    //     text: "Lotus Clinic Dental is one of the best clinics I have ever been to. The dentist is very prepared and very communicative. The prices are reasonable and I am very satisfied with the doctor's service. If you have problems with your teeth, Lotus Clinic Dental is the best solution.",
-    //     // treatment: "Zbardhim",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Alex Chatzi",
-    //     text: "I been there for a cleaning and a Airflow for my teeth 🦷 I’m very happy with re results the dentist she was very polite and professional.Definitely recommend!!!",
-    //     // treatment: "Implant dentar",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Enxhi Lamçe",
-    //     text: "Great experience at the Lotus Clinic! The staff was friendly, and the office was clean and modern. Dr. Angela was gentle and explained everything clearly. I highly recommend them for excellent dental care!",
-    //     // treatment: "Kujdes pediatrik",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Maria Golloshi",
-    //     text: "My mother has been fixing her teeth in this dental clinic and she has no regrets she loved how the dentist worked and she will definitely come back.",
-    //     // treatment: "Kujdes pediatrik",
-    //     rating: 5,
-    //   },
-    // ],
     videos: [
       [
         "Transformim buzëqeshjeje",
@@ -182,7 +145,9 @@ window.LOTUS_TRANSLATIONS = {
     ],
   },
   en: {
-    "meta.title": "Lotus Clinic Dental",
+    "meta.title": "Lotus Clinic Dental | Dentist in Vlore, Albania",
+    "meta.description":
+      "Lotus Clinic Dental in Vlore, Albania offers modern dental care, cosmetic dentistry, dental implants, orthodontics, teeth whitening, root canal treatment, pediatric dentistry, and emergency appointments.",
     "language.label": "Language",
     "brand.subtitle": "CLINIC DENTAL",
     "nav.home": "Home",
@@ -247,14 +212,11 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.text2":
       "Certifications and continued training reflect the clinic's commitment to safe techniques, aesthetic detail, and reliable long-term results.",
     "doctor.cert1Title": "Aesthetic Dentistry",
-    "doctor.cert1Text":
-      "Training focused on natural smile design and detail.",
+    "doctor.cert1Text": "Training focused on natural smile design and detail.",
     "doctor.cert2Title": "Endodontic Care",
-    "doctor.cert2Text":
-      "Continued education in tooth-preserving treatments.",
+    "doctor.cert2Text": "Continued education in tooth-preserving treatments.",
     "doctor.cert3Title": "Patient Safety",
-    "doctor.cert3Text":
-      "Certification supporting safe and consistent care.",
+    "doctor.cert3Text": "Certification supporting safe and consistent care.",
     "services.eyebrow": "Our Services",
     "services.title": "Comprehensive Dental Care",
     "services.availability": "Book a Consultation",
@@ -314,37 +276,31 @@ window.LOTUS_TRANSLATIONS = {
       {
         name: "Debbie S.",
         text: "I had a filling fall out and she got me in right away. Very clean and professional. I highly recommend and I will be back in a few days for my cleaning. Amazing.",
-        // treatment: "Kujdes i përgjithshëm",
         rating: 5,
       },
       {
         name: "Xhesi Shkëmbi",
         text: "I’m very pleased with the service provided by Dr. Anxhela. She is professional, kind, and explains every step of the process in detail, which makes you feel informed and at ease. Her positive energy and warm approach truly make a difference. The clinic is very clean and welcoming. Highly recommended!",
-        // treatment: "Transformim buzëqeshjeje",
         rating: 5,
       },
       {
         name: "Besjana Beke",
         text: "Lotus Clinic Dental is one of the best clinics I have ever been to. The dentist is very prepared and very communicative. The prices are reasonable and I am very satisfied with the doctor's service. If you have problems with your teeth, Lotus Clinic Dental is the best solution.",
-        // treatment: "Zbardhim",
         rating: 5,
       },
       {
         name: "Alex Chatzi",
         text: "I been there for a cleaning and a Airflow for my teeth 🦷 I’m very happy with re results the dentist she was very polite and professional.Definitely recommend!!!",
-        // treatment: "Implant dentar",
         rating: 5,
       },
       {
         name: "Enxhi Lamçe",
         text: "Great experience at the Lotus Clinic! The staff was friendly, and the office was clean and modern. Dr. Angela was gentle and explained everything clearly. I highly recommend them for excellent dental care!",
-        // treatment: "Kujdes pediatrik",
         rating: 5,
       },
       {
         name: "Maria Golloshi",
         text: "My mother has been fixing her teeth in this dental clinic and she has no regrets she loved how the dentist worked and she will definitely come back.",
-        // treatment: "Kujdes pediatrik",
         rating: 5,
       },
     ],
@@ -355,7 +311,9 @@ window.LOTUS_TRANSLATIONS = {
     ],
   },
   it: {
-    "meta.title": "Lotus Clinic Dental",
+    "meta.title": "Lotus Clinic Dental | Dentista a Valona, Albania",
+    "meta.description":
+      "Lotus Clinic Dental a Valona offre cure dentali moderne, odontoiatria estetica, impianti dentali, ortodonzia, sbiancamento, devitalizzazioni, odontoiatria pediatrica e urgenze dentali.",
     "language.label": "Lingua",
     "brand.subtitle": "CLINIC DENTAL",
     "nav.home": "Home",
@@ -429,8 +387,7 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text":
       "Aggiornamento continuo nei trattamenti che preservano i denti.",
     "doctor.cert3Title": "Sicurezza del paziente",
-    "doctor.cert3Text":
-      "Certificazione a supporto di cure sicure e costanti.",
+    "doctor.cert3Text": "Certificazione a supporto di cure sicure e costanti.",
     "services.eyebrow": "I nostri servizi",
     "services.title": "Cure dentali complete",
     "services.availability": "Prenota una consulenza",
@@ -487,38 +444,6 @@ window.LOTUS_TRANSLATIONS = {
     "alt.patient": "Dentista che cura un paziente",
     "alt.doctor": "Dottoressa alla Lotus Clinic Dental",
     "alt.certification": "Foto provvisoria di certificazione dentale",
-    // reviews: [
-    //   {
-    //     name: "Emily R.",
-    //     text: "Staff fantastico e clinica bellissima. Mi sono sentita a mio agio dalla prima visita.",
-    //     treatment: "Cure generali",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Robert T.",
-    //     text: "Professionali, delicati e molto attenti. Il mio sorriso e piu bello che mai.",
-    //     treatment: "Trasformazione del sorriso",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Sophia L.",
-    //     text: "La clinica e moderna, tranquilla e premium. La consiglio vivamente.",
-    //     treatment: "Sbiancamento",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Daniel M.",
-    //     text: "Mi hanno spiegato ogni passaggio con chiarezza e hanno reso semplice il processo dell'impianto.",
-    //     treatment: "Impianto dentale",
-    //     rating: 5,
-    //   },
-    //   {
-    //     name: "Mia K.",
-    //     text: "Mia figlia era nervosa prima della visita, ma il team e stato paziente e gentile.",
-    //     treatment: "Cure pediatriche",
-    //     rating: 5,
-    //   },
-    // ],
     videos: [
       [
         "Trasformazione del sorriso",
@@ -534,7 +459,9 @@ window.LOTUS_TRANSLATIONS = {
 };
 
 window.LOTUS_TRANSLATIONS.es = {
-  "meta.title": "Lotus Clinic Dental",
+  "meta.title": "Lotus Clinic Dental | Dentista en Vlore, Albania",
+  "meta.description":
+    "Lotus Clinic Dental en Vlore ofrece atencion dental moderna, odontologia estetica, implantes dentales, ortodoncia, blanqueamiento, endodoncia, odontologia pediatrica y urgencias dentales.",
   "language.label": "Idioma",
   "brand.subtitle": "CLINICA DENTAL",
   "nav.home": "Inicio",
@@ -595,8 +522,7 @@ window.LOTUS_TRANSLATIONS.es = {
   "about.patientFlowText":
     "Explicamos cada paso con claridad para que los pacientes sepan que esperar antes, durante y despues del tratamiento.",
   "doctor.eyebrow": "Conoce a la doctora",
-  "doctor.title":
-    "Dra. Anxhela, enfocada en odontologia precisa y delicada",
+  "doctor.title": "Dra. Anxhela, enfocada en odontologia precisa y delicada",
   "doctor.text":
     "La doctora combina diagnostico cuidadoso, comunicacion clara y planificacion moderna para que cada paciente se sienta informado y comodo.",
   "doctor.text2":
@@ -665,38 +591,6 @@ window.LOTUS_TRANSLATIONS.es = {
   "alt.patient": "Dentista tratando a un paciente",
   "alt.doctor": "Doctora en Lotus Clinic Dental",
   "alt.certification": "Foto provisional de certificacion dental",
-  // reviews: [
-  //   {
-  //     name: "Emily R.",
-  //     text: "Personal excelente y clinica preciosa. Me senti comoda desde la primera visita.",
-  //     treatment: "Atencion general",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Robert T.",
-  //     text: "Profesionales, delicados y muy atentos. Mi sonrisa se ve mejor que nunca.",
-  //     treatment: "Cambio de sonrisa",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Sophia L.",
-  //     text: "La clinica se siente moderna, tranquila y premium. Muy recomendable.",
-  //     treatment: "Blanqueamiento",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Daniel M.",
-  //     text: "Me explicaron cada paso con claridad e hicieron que el proceso del implante fuera sencillo.",
-  //     treatment: "Implante dental",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Mia K.",
-  //     text: "Mi hija estaba nerviosa antes de la visita, pero el equipo fue paciente y amable.",
-  //     treatment: "Atencion pediatrica",
-  //     rating: 5,
-  //   },
-  // ],
   videos: [
     [
       "Cambio de sonrisa",
@@ -714,7 +608,9 @@ window.LOTUS_TRANSLATIONS.es = {
 };
 
 window.LOTUS_TRANSLATIONS.de = {
-  "meta.title": "Lotus Clinic Dental",
+  "meta.title": "Lotus Clinic Dental | Zahnarzt in Vlore, Albanien",
+  "meta.description":
+    "Lotus Clinic Dental in Vlore bietet moderne Zahnversorgung, aesthetische Zahnmedizin, Zahnimplantate, Kieferorthopaedie, Bleaching, Wurzelbehandlung, Kinderzahnmedizin und Notfalltermine.",
   "language.label": "Sprache",
   "brand.subtitle": "ZAHNKLINIK",
   "nav.home": "Start",
@@ -775,8 +671,7 @@ window.LOTUS_TRANSLATIONS.de = {
   "about.patientFlowText":
     "Wir erklaeren jeden Schritt klar, damit Patienten vor, waehrend und nach der Behandlung wissen, was sie erwartet.",
   "doctor.eyebrow": "Lernen Sie die Aerztin kennen",
-  "doctor.title":
-    "Dr. Anxhela, fokussiert auf praezise und sanfte Zahnmedizin",
+  "doctor.title": "Dr. Anxhela, fokussiert auf praezise und sanfte Zahnmedizin",
   "doctor.text":
     "Die Aerztin verbindet sorgfaeltige Diagnose, klare Kommunikation und moderne Behandlungsplanung, damit sich jeder Patient informiert und wohl fuehlt.",
   "doctor.text2":
@@ -788,8 +683,7 @@ window.LOTUS_TRANSLATIONS.de = {
   "doctor.cert2Text":
     "Kontinuierliche Weiterbildung in zahnerhaltenden Behandlungen.",
   "doctor.cert3Title": "Patientensicherheit",
-  "doctor.cert3Text":
-    "Zertifizierung fuer sichere und konstante Versorgung.",
+  "doctor.cert3Text": "Zertifizierung fuer sichere und konstante Versorgung.",
   "services.eyebrow": "Unsere Leistungen",
   "services.title": "Umfassende Zahnversorgung",
   "services.availability": "Beratung buchen",
@@ -845,38 +739,6 @@ window.LOTUS_TRANSLATIONS.de = {
   "alt.patient": "Zahnarzt behandelt einen Patienten",
   "alt.doctor": "Aerztin bei Lotus Clinic Dental",
   "alt.certification": "Platzhalterfoto fuer zahnmedizinisches Zertifikat",
-  // reviews: [
-  //   {
-  //     name: "Emily R.",
-  //     text: "Tolles Team und eine sehr schoene Klinik. Ich habe mich ab dem ersten Besuch wohlgefuehlt.",
-  //     treatment: "Allgemeine Versorgung",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Robert T.",
-  //     text: "Professionell, sanft und sehr aufmerksam. Mein Laecheln sieht besser aus als je zuvor.",
-  //     treatment: "Smile Makeover",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Sophia L.",
-  //     text: "Die Klinik wirkt modern, ruhig und hochwertig. Sehr empfehlenswert.",
-  //     treatment: "Bleaching",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Daniel M.",
-  //     text: "Sie haben jeden Schritt klar erklaert und den Implantatprozess einfach wirken lassen.",
-  //     treatment: "Zahnimplantat",
-  //     rating: 5,
-  //   },
-  //   {
-  //     name: "Mia K.",
-  //     text: "Meine Tochter war vor dem Besuch nervoes, aber das Team war geduldig und freundlich.",
-  //     treatment: "Kinderzahnmedizin",
-  //     rating: 5,
-  //   },
-  // ],
   videos: [
     [
       "Smile Makeover",
@@ -894,7 +756,9 @@ window.LOTUS_TRANSLATIONS.de = {
 };
 
 window.LOTUS_TRANSLATIONS.fr = {
-  "meta.title": "Lotus Clinic Dental",
+  "meta.title": "Lotus Clinic Dental | Dentiste a Vlore, Albanie",
+  "meta.description":
+    "Lotus Clinic Dental a Vlore propose des soins dentaires modernes, dentisterie esthetique, implants dentaires, orthodontie, blanchiment, traitement de canal, dentisterie pediatrique et urgences.",
   "language.label": "Langue",
   "brand.subtitle": "CLINIQUE DENTAIRE",
   "nav.home": "Accueil",
@@ -925,8 +789,7 @@ window.LOTUS_TRANSLATIONS.fr = {
   "features.expertText":
     "Des professionnels experimentes dedies a votre sourire.",
   "features.careTitle": "Soins personnalises",
-  "features.careText":
-    "Des plans de traitement adaptes a vos besoins.",
+  "features.careText": "Des plans de traitement adaptes a vos besoins.",
   "marquee.digital": "Conception numerique du sourire",
   "marquee.whitening": "Blanchiment doux",
   "marquee.family": "Dentisterie familiale",
@@ -956,8 +819,7 @@ window.LOTUS_TRANSLATIONS.fr = {
   "about.patientFlowText":
     "Nous expliquons chaque etape clairement afin que les patients sachent a quoi s'attendre avant, pendant et apres le traitement.",
   "doctor.eyebrow": "Rencontrez la docteure",
-  "doctor.title":
-    "Dr. Anxhela, orientee vers une dentisterie precise et douce",
+  "doctor.title": "Dr. Anxhela, orientee vers une dentisterie precise et douce",
   "doctor.text":
     "La docteure associe un diagnostic attentif, une communication claire et une planification moderne des traitements pour aider chaque patient a se sentir informe et a l'aise.",
   "doctor.text2":
@@ -969,15 +831,15 @@ window.LOTUS_TRANSLATIONS.fr = {
   "doctor.cert2Text":
     "Formation continue dans les traitements qui preservent les dents.",
   "doctor.cert3Title": "Securite du patient",
-  "doctor.cert3Text":
-    "Certification soutenant des soins surs et constants.",
+  "doctor.cert3Text": "Certification soutenant des soins surs et constants.",
   "services.eyebrow": "Nos services",
   "services.title": "Soins dentaires complets",
   "services.availability": "Reserver une consultation",
   "service.generalTitle": "Dentisterie generale",
   "service.generalText": "Controles, nettoyage et examens.",
   "service.cosmeticTitle": "Dentisterie esthetique",
-  "service.cosmeticText": "Blanchiment, facettes et transformations du sourire.",
+  "service.cosmeticText":
+    "Blanchiment, facettes et transformations du sourire.",
   "service.implantsTitle": "Implants dentaires",
   "service.implantsText": "Solutions durables pour les dents manquantes.",
   "service.orthoTitle": "Orthodontie",
