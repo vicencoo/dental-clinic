@@ -5,11 +5,11 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #e2f6ff 0%, #edfaff 50%, #ffffff 100%);
+  background: linear-gradient(180deg, #e6fbfc 0%, #eefcfd 46%, #f7feff 100%);
 }
 
 #top {
-  background: linear-gradient(180deg, #d9f2ff 0%, #e2f6ff 42%, #f2fbff 100%);
+  background: linear-gradient(180deg, #dff8fb 0%, #e9fbfc 42%, #f7feff 100%);
 }
 
 #top::after {

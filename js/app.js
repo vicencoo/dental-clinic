@@ -44,6 +44,7 @@ const languageMeta = {
   sq: { code: "SQ", flag: "🇦🇱" },
   en: { code: "EN", flag: "🇬🇧" },
   it: { code: "IT", flag: "🇮🇹" },
+  fr: { code: "FR", flag: "FR" },
 };
 
 languageMeta.es = { code: "ES", flag: "ES" };
@@ -53,12 +54,15 @@ const languageFlagImages = {
   sq: "/public/flags/albania.png",
   en: "/public/flags/english.png",
   it: "/public/flags/italian.png",
+  fr: "/public/flags/france.png",
   es: "/public/flags/spain.png",
   de: "/public/flags/german.png",
 };
 
 const translate = (key) =>
   translations[currentLanguage]?.[key] || translations.en[key] || key;
+
+const translateEnglish = (key) => translations.en?.[key] || key;
 
 const closeLanguageMenu = () => {
   if (languageMenu?.classList.contains("hidden")) return;
@@ -286,14 +290,14 @@ const applyLanguage = (language) => {
     element.value = dictionary[element.dataset.i18nValue] || element.value;
   });
 
-  reviews = dictionary.reviews;
+  reviews = translations.en?.reviews || dictionary.reviews || [];
   videos = videoAssets.map((asset, index) => ({
     ...asset,
     title: dictionary.videos[index]?.[0] || "",
     text: dictionary.videos[index]?.[1] || "",
   }));
 
-  setReviewsData(reviews, translate);
+  setReviewsData(reviews, translateEnglish);
   renderReviews();
   renderVideos(videos);
 };

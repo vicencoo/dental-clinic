@@ -194,6 +194,20 @@
                   class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#075c6d] transition hover:bg-[#e8fafd]"
                   type="button"
                   role="option"
+                  data-language="fr"
+                >
+                  <img
+                    class="h-4 w-5 shrink-0 rounded-sm object-cover shadow-sm"
+                    src="/public/flags/france.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Français</span>
+                </button>
+                <button
+                  class="language-option flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[#075c6d] transition hover:bg-[#e8fafd]"
+                  type="button"
+                  role="option"
                   data-language="es"
                 >
                   <img
@@ -310,7 +324,7 @@
               >Book</a
             >
             <div
-              class="mt-3 grid grid-cols-5 gap-2 border-t border-[#d8f4f8] pt-3"
+              class="mt-3 grid grid-cols-6 gap-2 border-t border-[#d8f4f8] pt-3"
               aria-label="Language"
               data-i18n-aria-label="language.label"
             >
@@ -349,6 +363,19 @@
                 <img
                   class="h-4 w-5 rounded-sm object-cover shadow-sm"
                   src="/public/flags/italian.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <button
+                class="language-option grid place-items-center rounded-xl p-2 transition hover:bg-[#e8fafd]"
+                type="button"
+                data-language="fr"
+                aria-label="Français"
+              >
+                <img
+                  class="h-4 w-5 rounded-sm object-cover shadow-sm"
+                  src="/public/flags/france.png"
                   alt=""
                   aria-hidden="true"
                 />
@@ -436,7 +463,7 @@
               <p
                 class="font-serif text-3xl text-[#075c6d]"
                 data-counter
-                data-counter-target="12"
+                data-counter-target="10"
                 data-counter-suffix="k+"
               >
                 0
@@ -452,7 +479,8 @@
               <p
                 class="font-serif text-3xl text-[#075c6d]"
                 data-counter
-                data-counter-target="18"
+                data-counter-target="8"
+                data-counter-suffix="+"
               >
                 0
               </p>
@@ -467,7 +495,7 @@
               <p
                 class="font-serif text-3xl text-[#075c6d]"
                 data-counter
-                data-counter-target="4.9"
+                data-counter-target="5.0"
                 data-counter-decimals="1"
               >
                 0
@@ -594,7 +622,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="bg-white py-24">
+    <section id="about" class="bg-[#f7feff] py-24">
       <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
         <div class="reveal relative">
           <img
@@ -625,27 +653,223 @@
             care for patients of all ages. Our goal is to make every visit
             comfortable and every smile confident.
           </p>
+          <p class="mt-4 leading-8 text-[#5d6f76]" data-i18n="about.text2">
+            Our clinic is designed to feel bright, organized, and welcoming,
+            with treatment rooms prepared for privacy, hygiene, and a smooth
+            patient experience from consultation to follow-up care.
+          </p>
 
           <ul class="mt-8 grid gap-3 text-[#53666e] sm:grid-cols-2">
-            <li class="rounded-xl bg-[#f8f3ee] px-4 py-3">
+            <li class="rounded-xl bg-[#eefcfd] px-4 py-3">
               ✓ <span data-i18n="about.point1">Patient-centered approach</span>
             </li>
-            <li class="rounded-xl bg-[#f8f3ee] px-4 py-3">
+            <li class="rounded-xl bg-[#eefcfd] px-4 py-3">
               ✓ <span data-i18n="about.point2">Modern dental technology</span>
             </li>
-            <li class="rounded-xl bg-[#f8f3ee] px-4 py-3">
+            <li class="rounded-xl bg-[#eefcfd] px-4 py-3">
               ✓ <span data-i18n="about.point3">Relaxing environment</span>
             </li>
-            <li class="rounded-xl bg-[#f8f3ee] px-4 py-3">
+            <li class="rounded-xl bg-[#eefcfd] px-4 py-3">
               ✓ <span data-i18n="about.point4">Complete dental care</span>
             </li>
           </ul>
         </div>
       </div>
+
+      <div class="mx-auto mt-16 max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-5 md:grid-cols-3">
+          <article
+            class="reveal rounded-2xl border border-[#d8f4f8] bg-white/82 p-7 shadow-xl shadow-[#075c6d]/6 backdrop-blur"
+          >
+            <p
+              class="text-xs font-bold uppercase tracking-[0.22em] text-[#0c8da3]"
+              data-i18n="about.environmentEyebrow"
+            >
+              Clinic Environment
+            </p>
+            <h3
+              class="mt-4 font-serif text-2xl"
+              data-i18n="about.environmentTitle"
+            >
+              Calm, modern, and organized
+            </h3>
+            <p
+              class="mt-3 text-sm leading-6 text-[#65757b]"
+              data-i18n="about.environmentText"
+            >
+              Every area is arranged to keep appointments clear, comfortable,
+              and efficient for patients and families.
+            </p>
+          </article>
+          <article
+            class="reveal rounded-2xl border border-[#d8f4f8] bg-white/82 p-7 shadow-xl shadow-[#075c6d]/6 backdrop-blur"
+          >
+            <p
+              class="text-xs font-bold uppercase tracking-[0.22em] text-[#0c8da3]"
+              data-i18n="about.hygieneEyebrow"
+            >
+              Hygiene Standards
+            </p>
+            <h3 class="mt-4 font-serif text-2xl" data-i18n="about.hygieneTitle">
+              Prepared with care
+            </h3>
+            <p
+              class="mt-3 text-sm leading-6 text-[#65757b]"
+              data-i18n="about.hygieneText"
+            >
+              Treatment spaces are maintained with careful cleaning routines and
+              a focus on patient safety.
+            </p>
+          </article>
+          <article
+            class="reveal rounded-2xl border border-[#d8f4f8] bg-white/82 p-7 shadow-xl shadow-[#075c6d]/6 backdrop-blur"
+          >
+            <p
+              class="text-xs font-bold uppercase tracking-[0.22em] text-[#0c8da3]"
+              data-i18n="about.patientFlowEyebrow"
+            >
+              Patient Flow
+            </p>
+            <h3
+              class="mt-4 font-serif text-2xl"
+              data-i18n="about.patientFlowTitle"
+            >
+              Easy from start to finish
+            </h3>
+            <p
+              class="mt-3 text-sm leading-6 text-[#65757b]"
+              data-i18n="about.patientFlowText"
+            >
+              We explain each step clearly, so patients know what to expect
+              before, during, and after treatment.
+            </p>
+          </article>
+        </div>
+
+        <div
+          class="mt-20 grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center"
+        >
+          <div
+            class="reveal overflow-hidden rounded-4xl bg-white p-3 shadow-2xl shadow-[#075c6d]/12 ring-1 ring-[#d8f4f8]"
+          >
+            <img
+              src="/public/images/dental-7.jpg"
+              loading="lazy"
+              decoding="async"
+              class="h-110 w-full rounded-3xl object-cover object-center md:h-130"
+              alt="Doctor at Lotus Clinic Dental"
+              data-i18n-alt="alt.doctor"
+            />
+          </div>
+
+          <div class="reveal">
+            <p
+              class="text-xs font-bold uppercase tracking-[0.25em] text-[#b78148]"
+              data-i18n="doctor.eyebrow"
+            >
+              Meet The Doctor
+            </p>
+            <h2
+              class="mt-4 font-serif text-4xl leading-tight md:text-5xl"
+              data-i18n="doctor.title"
+            >
+              Dr. Anxhela, focused on precise and gentle dentistry
+            </h2>
+            <p class="mt-6 leading-8 text-[#5d6f76]" data-i18n="doctor.text">
+              The doctor combines careful diagnosis, clear communication, and
+              modern treatment planning to help each patient feel informed and
+              comfortable.
+            </p>
+            <p class="mt-4 leading-8 text-[#5d6f76]" data-i18n="doctor.text2">
+              Certifications and continued training reflect the clinic's
+              commitment to safe techniques, aesthetic detail, and reliable
+              long-term results.
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal mt-12 grid gap-6 md:grid-cols-3">
+          <article
+            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-6.webp"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover md:h-80"
+                alt="Dental certification placeholder"
+                data-i18n-alt="alt.certification"
+              />
+            </div>
+            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert1Title">
+              Aesthetic Dentistry
+            </h3>
+            <p
+              class="mt-2 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert1Text"
+            >
+              Training focused on natural smile design and detail.
+            </p>
+          </article>
+          <article
+            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-1.webp"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover md:h-80"
+                alt="Dental certification placeholder"
+                data-i18n-alt="alt.certification"
+              />
+            </div>
+            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert2Title">
+              Endodontic Care
+            </h3>
+            <p
+              class="mt-2 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert2Text"
+            >
+              Continued education in tooth-preserving treatments.
+            </p>
+          </article>
+          <article
+            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-12.webp"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover md:h-80"
+                alt="Dental certification placeholder"
+                data-i18n-alt="alt.certification"
+              />
+            </div>
+            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert3Title">
+              Patient Safety
+            </h3>
+            <p
+              class="mt-2 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert3Text"
+            >
+              Certification supporting safe and consistent care.
+            </p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="bg-[#f8f3ee] py-24">
+    <section id="services" class="bg-[#eefcfd] py-24">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div
           class="reveal mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end"
@@ -669,7 +893,7 @@
             class="w-fit rounded-full border border-[#c9a47a]/50 bg-white px-5 py-3 text-xs font-bold uppercase tracking-widest text-[#0d2430] transition hover:-translate-y-1 hover:border-[#0d2430]"
             data-i18n="services.availability"
           >
-            View Availability
+            Book a Consultation
           </a>
         </div>
 
@@ -809,7 +1033,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section id="gallery" class="bg-white py-24">
+    <section id="gallery" class="bg-[#f7feff] py-24">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div class="reveal">
           <p
@@ -838,7 +1062,7 @@
     </section>
 
     <!-- CLIENT VIDEOS -->
-    <section id="videos" class="relative overflow-hidden bg-[#f8f3ee] py-24">
+    <section id="videos" class="relative overflow-hidden bg-[#eefcfd] py-24">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div class="reveal mb-12 max-w-2xl">
           <p
@@ -960,7 +1184,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="bg-[#f8f3ee] py-24">
+    <section id="contact" class="bg-[#eefcfd] py-24">
       <div
         class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8 items-center"
       >
@@ -1096,12 +1320,12 @@
     <!-- FOOTER -->
     <footer class="bg-[#0d2430] py-10 text-white">
       <div
-        class="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 text-sm text-white/70 md:flex-row lg:px-8"
+        class="mx-auto flex max-w-7xl flex-col gap-6 px-5 text-sm text-white/70 md:flex-row lg:px-8 items-center justify-center"
       >
         <p data-i18n="footer.rights">
           © 2026 Lotus Clinic Dental. All rights reserved.
         </p>
-        <div class="flex gap-6">
+        <!-- <div class="flex gap-6">
           <a
             class="transition hover:text-white"
             href="#"
@@ -1114,7 +1338,7 @@
             data-i18n="footer.terms"
             >Terms of Service</a
           >
-        </div>
+        </div> -->
       </div>
     </footer>
 

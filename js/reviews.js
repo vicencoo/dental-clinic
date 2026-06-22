@@ -37,7 +37,6 @@ const reviewCardTemplate = (review, position) => {
        <p class="text-[#c9a47a]" aria-label="${review.rating} ${currentTranslate("reviews.star")}">
         ${"★".repeat(review.rating)}
         </p>
-        <span class="rounded-full border border-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/55">${review.treatment}</span>
       </div>
       <p class="mt-6 ${textClasses}">${review.text}</p>
       <div class="mt-8 flex items-center gap-3">

@@ -41,13 +41,43 @@ window.LOTUS_TRANSLATIONS = {
     "about.title": "Të përkushtuar për buzëqeshje të shëndetshme dhe të bukura",
     "about.text":
       "Në Lotus Clinic Dental ofrojmë kujdes dentar të qetë, modern dhe të plotë për pacientë të të gjitha moshave. Qëllimi ynë është që çdo vizitë të jetë komode dhe çdo buzëqeshje me vetëbesim.",
+    "about.text2":
+      "Klinika jonë është menduar të jetë e ndritshme, e organizuar dhe mikpritëse, me dhoma trajtimi të përgatitura për privatësi, higjienë dhe një përvojë të qetë nga konsultimi deri te kontrolli pas trajtimit.",
     "about.point1": "Qasje me pacientin në qendër",
     "about.point2": "Teknologji moderne dentare",
     "about.point3": "Ambient relaksues",
     "about.point4": "Kujdes dentar i plotë",
+    "about.environmentEyebrow": "Ambienti i klinikës",
+    "about.environmentTitle": "I qetë, modern dhe i organizuar",
+    "about.environmentText":
+      "Çdo hapësirë është rregulluar për takime të qarta, komode dhe efikase për pacientët dhe familjet.",
+    "about.hygieneEyebrow": "Standardet e higjienës",
+    "about.hygieneTitle": "E përgatitur me kujdes",
+    "about.hygieneText":
+      "Hapësirat e trajtimit mirëmbahen me rutina të kujdesshme pastrimi dhe fokus në sigurinë e pacientit.",
+    "about.patientFlowEyebrow": "Përvoja e pacientit",
+    "about.patientFlowTitle": "E lehtë nga fillimi në fund",
+    "about.patientFlowText":
+      "Ne shpjegojmë çdo hap qartë, që pacientët të dinë çfarë të presin para, gjatë dhe pas trajtimit.",
+    "doctor.eyebrow": "Njihuni me doktoreshën",
+    "doctor.title":
+      "Dr. Anxhela, e fokusuar në dentistri të saktë dhe të butë",
+    "doctor.text":
+      "Doktoresha kombinon diagnozën e kujdesshme, komunikimin e qartë dhe planifikimin modern të trajtimit për ta bërë çdo pacient të ndihet i informuar dhe komod.",
+    "doctor.text2":
+      "Certifikimet dhe trajnimet e vazhdueshme tregojnë përkushtimin e klinikës ndaj teknikave të sigurta, detajeve estetike dhe rezultateve afatgjata.",
+    "doctor.cert1Title": "Dentistri estetike",
+    "doctor.cert1Text":
+      "Trajnim i fokusuar në dizajn natyral të buzëqeshjes dhe detaje.",
+    "doctor.cert2Title": "Kujdes endodontik",
+    "doctor.cert2Text":
+      "Edukime të vazhdueshme në trajtime që ruajnë dhëmbët natyralë.",
+    "doctor.cert3Title": "Siguria e pacientit",
+    "doctor.cert3Text":
+      "Certifikim që mbështet kujdes të sigurt dhe të qëndrueshëm.",
     "services.eyebrow": "Shërbimet tona",
     "services.title": "Kujdes dentar i plotë",
-    "services.availability": "Shiko oraret",
+    "services.availability": "Rezervo një konsultë",
     "service.generalTitle": "Dentistri e përgjithshme",
     "service.generalText": "Kontrolle, pastrim dhe ekzaminime.",
     "service.cosmeticTitle": "Dentistri estetike",
@@ -99,38 +129,46 @@ window.LOTUS_TRANSLATIONS = {
     "alt.tools": "Mjete dentare të përgatitura për trajtim",
     "alt.room": "Karrige dentare dhe sallë klinike e ndriçuar",
     "alt.patient": "Dentist duke trajtuar nje pacient",
-    reviews: [
-      {
-        name: "Emily R.",
-        text: "Staf i mrekullueshëm dhe klinikë shumë e bukur. U ndjeva rehat që nga vizita e parë.",
-        treatment: "Kujdes i përgjithshëm",
-        rating: 5,
-      },
-      {
-        name: "Robert T.",
-        text: "Profesionalë, të butë dhe shumë të kujdesshëm. Buzëqeshja ime duket më mirë se kurrë.",
-        treatment: "Transformim buzëqeshjeje",
-        rating: 5,
-      },
-      {
-        name: "Sophia L.",
-        text: "Klinika ndihet moderne, e qetë dhe premium. E rekomandoj shumë.",
-        treatment: "Zbardhim",
-        rating: 5,
-      },
-      {
-        name: "Daniel M.",
-        text: "Ma shpjeguan çdo hap qartë dhe e bënë procesin e implantit të ndihej i thjeshtë.",
-        treatment: "Implant dentar",
-        rating: 5,
-      },
-      {
-        name: "Mia K.",
-        text: "Vajza ime ishte e shqetësuar para vizitës, por ekipi ishte i duruar dhe i sjellshëm.",
-        treatment: "Kujdes pediatrik",
-        rating: 5,
-      },
-    ],
+    "alt.doctor": "Doktoresha në Lotus Clinic Dental",
+    "alt.certification": "Foto provizore e certifikimit dentar",
+    // reviews: [
+    //   {
+    //     name: "Debbie S.",
+    //     text: "I had a filling fall out and she got me in right away. Very clean and professional. I highly recommend and I will be back in a few days for my cleaning. Amazing.",
+    //     // treatment: "Kujdes i përgjithshëm",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Xhesi Shkëmbi",
+    //     text: "I’m very pleased with the service provided by Dr. Anxhela. She is professional, kind, and explains every step of the process in detail, which makes you feel informed and at ease. Her positive energy and warm approach truly make a difference. The clinic is very clean and welcoming. Highly recommended!",
+    //     // treatment: "Transformim buzëqeshjeje",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Besjana Beke",
+    //     text: "Lotus Clinic Dental is one of the best clinics I have ever been to. The dentist is very prepared and very communicative. The prices are reasonable and I am very satisfied with the doctor's service. If you have problems with your teeth, Lotus Clinic Dental is the best solution.",
+    //     // treatment: "Zbardhim",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Alex Chatzi",
+    //     text: "I been there for a cleaning and a Airflow for my teeth 🦷 I’m very happy with re results the dentist she was very polite and professional.Definitely recommend!!!",
+    //     // treatment: "Implant dentar",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Enxhi Lamçe",
+    //     text: "Great experience at the Lotus Clinic! The staff was friendly, and the office was clean and modern. Dr. Angela was gentle and explained everything clearly. I highly recommend them for excellent dental care!",
+    //     // treatment: "Kujdes pediatrik",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Maria Golloshi",
+    //     text: "My mother has been fixing her teeth in this dental clinic and she has no regrets she loved how the dentist worked and she will definitely come back.",
+    //     // treatment: "Kujdes pediatrik",
+    //     rating: 5,
+    //   },
+    // ],
     videos: [
       [
         "Transformim buzëqeshjeje",
@@ -184,13 +222,42 @@ window.LOTUS_TRANSLATIONS = {
     "about.title": "Dedicated to Creating Healthy, Beautiful Smiles",
     "about.text":
       "At Lotus Clinic Dental, we provide calm, modern, and complete dental care for patients of all ages. Our goal is to make every visit comfortable and every smile confident.",
+    "about.text2":
+      "Our clinic is designed to feel bright, organized, and welcoming, with treatment rooms prepared for privacy, hygiene, and a smooth patient experience from consultation to follow-up care.",
     "about.point1": "Patient-centered approach",
     "about.point2": "Modern dental technology",
     "about.point3": "Relaxing environment",
     "about.point4": "Complete dental care",
+    "about.environmentEyebrow": "Clinic Environment",
+    "about.environmentTitle": "Calm, modern, and organized",
+    "about.environmentText":
+      "Every area is arranged to keep appointments clear, comfortable, and efficient for patients and families.",
+    "about.hygieneEyebrow": "Hygiene Standards",
+    "about.hygieneTitle": "Prepared with care",
+    "about.hygieneText":
+      "Treatment spaces are maintained with careful cleaning routines and a focus on patient safety.",
+    "about.patientFlowEyebrow": "Patient Flow",
+    "about.patientFlowTitle": "Easy from start to finish",
+    "about.patientFlowText":
+      "We explain each step clearly, so patients know what to expect before, during, and after treatment.",
+    "doctor.eyebrow": "Meet The Doctor",
+    "doctor.title": "Dr. Anxhela, focused on precise and gentle dentistry",
+    "doctor.text":
+      "The doctor combines careful diagnosis, clear communication, and modern treatment planning to help each patient feel informed and comfortable.",
+    "doctor.text2":
+      "Certifications and continued training reflect the clinic's commitment to safe techniques, aesthetic detail, and reliable long-term results.",
+    "doctor.cert1Title": "Aesthetic Dentistry",
+    "doctor.cert1Text":
+      "Training focused on natural smile design and detail.",
+    "doctor.cert2Title": "Endodontic Care",
+    "doctor.cert2Text":
+      "Continued education in tooth-preserving treatments.",
+    "doctor.cert3Title": "Patient Safety",
+    "doctor.cert3Text":
+      "Certification supporting safe and consistent care.",
     "services.eyebrow": "Our Services",
     "services.title": "Comprehensive Dental Care",
-    "services.availability": "View Availability",
+    "services.availability": "Book a Consultation",
     "service.generalTitle": "General Dentistry",
     "service.generalText": "Checkups, cleaning, and exams.",
     "service.cosmeticTitle": "Cosmetic Dentistry",
@@ -241,35 +308,43 @@ window.LOTUS_TRANSLATIONS = {
     "alt.tools": "Dental tools prepared for treatment",
     "alt.room": "Bright dental chair and clinic room",
     "alt.patient": "Dentist treating a patient",
+    "alt.doctor": "Doctor at Lotus Clinic Dental",
+    "alt.certification": "Dental certification placeholder",
     reviews: [
       {
-        name: "Emily R.",
-        text: "Amazing staff and beautiful clinic. I felt comfortable from the first visit.",
-        treatment: "General Care",
+        name: "Debbie S.",
+        text: "I had a filling fall out and she got me in right away. Very clean and professional. I highly recommend and I will be back in a few days for my cleaning. Amazing.",
+        // treatment: "Kujdes i përgjithshëm",
         rating: 5,
       },
       {
-        name: "Robert T.",
-        text: "Professional, gentle, and very caring. My smile looks better than ever.",
-        treatment: "Smile Makeover",
+        name: "Xhesi Shkëmbi",
+        text: "I’m very pleased with the service provided by Dr. Anxhela. She is professional, kind, and explains every step of the process in detail, which makes you feel informed and at ease. Her positive energy and warm approach truly make a difference. The clinic is very clean and welcoming. Highly recommended!",
+        // treatment: "Transformim buzëqeshjeje",
         rating: 5,
       },
       {
-        name: "Sophia L.",
-        text: "The clinic feels modern, calm, and premium. Highly recommended.",
-        treatment: "Whitening",
+        name: "Besjana Beke",
+        text: "Lotus Clinic Dental is one of the best clinics I have ever been to. The dentist is very prepared and very communicative. The prices are reasonable and I am very satisfied with the doctor's service. If you have problems with your teeth, Lotus Clinic Dental is the best solution.",
+        // treatment: "Zbardhim",
         rating: 5,
       },
       {
-        name: "Daniel M.",
-        text: "They explained every step clearly and made the whole implant process feel simple.",
-        treatment: "Dental Implant",
+        name: "Alex Chatzi",
+        text: "I been there for a cleaning and a Airflow for my teeth 🦷 I’m very happy with re results the dentist she was very polite and professional.Definitely recommend!!!",
+        // treatment: "Implant dentar",
         rating: 5,
       },
       {
-        name: "Mia K.",
-        text: "My daughter was nervous before the visit, but the team was patient and kind.",
-        treatment: "Pediatric Care",
+        name: "Enxhi Lamçe",
+        text: "Great experience at the Lotus Clinic! The staff was friendly, and the office was clean and modern. Dr. Angela was gentle and explained everything clearly. I highly recommend them for excellent dental care!",
+        // treatment: "Kujdes pediatrik",
+        rating: 5,
+      },
+      {
+        name: "Maria Golloshi",
+        text: "My mother has been fixing her teeth in this dental clinic and she has no regrets she loved how the dentist worked and she will definitely come back.",
+        // treatment: "Kujdes pediatrik",
         rating: 5,
       },
     ],
@@ -322,13 +397,43 @@ window.LOTUS_TRANSLATIONS = {
     "about.title": "Dedicati a creare sorrisi sani e belli",
     "about.text":
       "Alla Lotus Clinic Dental offriamo cure dentali tranquille, moderne e complete per pazienti di tutte le eta. Il nostro obiettivo e rendere ogni visita confortevole e ogni sorriso sicuro.",
+    "about.text2":
+      "La clinica e progettata per essere luminosa, organizzata e accogliente, con sale trattamento preparate per privacy, igiene e un'esperienza fluida dalla consulenza ai controlli.",
     "about.point1": "Approccio centrato sul paziente",
     "about.point2": "Tecnologia dentale moderna",
     "about.point3": "Ambiente rilassante",
     "about.point4": "Cure dentali complete",
+    "about.environmentEyebrow": "Ambiente della clinica",
+    "about.environmentTitle": "Calmo, moderno e organizzato",
+    "about.environmentText":
+      "Ogni area e organizzata per rendere gli appuntamenti chiari, comodi ed efficienti per pazienti e famiglie.",
+    "about.hygieneEyebrow": "Standard di igiene",
+    "about.hygieneTitle": "Preparata con cura",
+    "about.hygieneText":
+      "Gli spazi di trattamento sono mantenuti con attente routine di pulizia e attenzione alla sicurezza del paziente.",
+    "about.patientFlowEyebrow": "Percorso del paziente",
+    "about.patientFlowTitle": "Semplice dall'inizio alla fine",
+    "about.patientFlowText":
+      "Spieghiamo ogni passaggio con chiarezza, cosi i pazienti sanno cosa aspettarsi prima, durante e dopo il trattamento.",
+    "doctor.eyebrow": "Conosci la dottoressa",
+    "doctor.title":
+      "Dr. Anxhela, concentrata su odontoiatria precisa e delicata",
+    "doctor.text":
+      "La dottoressa combina diagnosi accurata, comunicazione chiara e pianificazione moderna per aiutare ogni paziente a sentirsi informato e a proprio agio.",
+    "doctor.text2":
+      "Certificazioni e formazione continua riflettono l'impegno della clinica verso tecniche sicure, dettaglio estetico e risultati affidabili nel tempo.",
+    "doctor.cert1Title": "Odontoiatria estetica",
+    "doctor.cert1Text":
+      "Formazione focalizzata su design naturale del sorriso e dettaglio.",
+    "doctor.cert2Title": "Cure endodontiche",
+    "doctor.cert2Text":
+      "Aggiornamento continuo nei trattamenti che preservano i denti.",
+    "doctor.cert3Title": "Sicurezza del paziente",
+    "doctor.cert3Text":
+      "Certificazione a supporto di cure sicure e costanti.",
     "services.eyebrow": "I nostri servizi",
     "services.title": "Cure dentali complete",
-    "services.availability": "Vedi disponibilita",
+    "services.availability": "Prenota una consulenza",
     "service.generalTitle": "Odontoiatria generale",
     "service.generalText": "Controlli, pulizia ed esami.",
     "service.cosmeticTitle": "Odontoiatria estetica",
@@ -380,38 +485,40 @@ window.LOTUS_TRANSLATIONS = {
     "alt.tools": "Strumenti dentali preparati per il trattamento",
     "alt.room": "Poltrona dentale luminosa e sala clinica",
     "alt.patient": "Dentista che cura un paziente",
-    reviews: [
-      {
-        name: "Emily R.",
-        text: "Staff fantastico e clinica bellissima. Mi sono sentita a mio agio dalla prima visita.",
-        treatment: "Cure generali",
-        rating: 5,
-      },
-      {
-        name: "Robert T.",
-        text: "Professionali, delicati e molto attenti. Il mio sorriso e piu bello che mai.",
-        treatment: "Trasformazione del sorriso",
-        rating: 5,
-      },
-      {
-        name: "Sophia L.",
-        text: "La clinica e moderna, tranquilla e premium. La consiglio vivamente.",
-        treatment: "Sbiancamento",
-        rating: 5,
-      },
-      {
-        name: "Daniel M.",
-        text: "Mi hanno spiegato ogni passaggio con chiarezza e hanno reso semplice il processo dell'impianto.",
-        treatment: "Impianto dentale",
-        rating: 5,
-      },
-      {
-        name: "Mia K.",
-        text: "Mia figlia era nervosa prima della visita, ma il team e stato paziente e gentile.",
-        treatment: "Cure pediatriche",
-        rating: 5,
-      },
-    ],
+    "alt.doctor": "Dottoressa alla Lotus Clinic Dental",
+    "alt.certification": "Foto provvisoria di certificazione dentale",
+    // reviews: [
+    //   {
+    //     name: "Emily R.",
+    //     text: "Staff fantastico e clinica bellissima. Mi sono sentita a mio agio dalla prima visita.",
+    //     treatment: "Cure generali",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Robert T.",
+    //     text: "Professionali, delicati e molto attenti. Il mio sorriso e piu bello che mai.",
+    //     treatment: "Trasformazione del sorriso",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Sophia L.",
+    //     text: "La clinica e moderna, tranquilla e premium. La consiglio vivamente.",
+    //     treatment: "Sbiancamento",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Daniel M.",
+    //     text: "Mi hanno spiegato ogni passaggio con chiarezza e hanno reso semplice il processo dell'impianto.",
+    //     treatment: "Impianto dentale",
+    //     rating: 5,
+    //   },
+    //   {
+    //     name: "Mia K.",
+    //     text: "Mia figlia era nervosa prima della visita, ma il team e stato paziente e gentile.",
+    //     treatment: "Cure pediatriche",
+    //     rating: 5,
+    //   },
+    // ],
     videos: [
       [
         "Trasformazione del sorriso",
@@ -469,13 +576,43 @@ window.LOTUS_TRANSLATIONS.es = {
   "about.title": "Dedicados a crear sonrisas sanas y bonitas",
   "about.text":
     "En Lotus Clinic Dental ofrecemos atencion dental tranquila, moderna y completa para pacientes de todas las edades. Nuestro objetivo es que cada visita sea comoda y cada sonrisa segura.",
+  "about.text2":
+    "La clinica esta disenada para sentirse luminosa, organizada y acogedora, con salas de tratamiento preparadas para privacidad, higiene y una experiencia fluida desde la consulta hasta el seguimiento.",
   "about.point1": "Enfoque centrado en el paciente",
   "about.point2": "Tecnologia dental moderna",
   "about.point3": "Ambiente relajante",
   "about.point4": "Atencion dental completa",
+  "about.environmentEyebrow": "Ambiente de la clinica",
+  "about.environmentTitle": "Tranquilo, moderno y organizado",
+  "about.environmentText":
+    "Cada area esta organizada para que las citas sean claras, comodas y eficientes para pacientes y familias.",
+  "about.hygieneEyebrow": "Estandares de higiene",
+  "about.hygieneTitle": "Preparada con cuidado",
+  "about.hygieneText":
+    "Los espacios de tratamiento se mantienen con rutinas cuidadosas de limpieza y enfoque en la seguridad del paciente.",
+  "about.patientFlowEyebrow": "Experiencia del paciente",
+  "about.patientFlowTitle": "Facil de principio a fin",
+  "about.patientFlowText":
+    "Explicamos cada paso con claridad para que los pacientes sepan que esperar antes, durante y despues del tratamiento.",
+  "doctor.eyebrow": "Conoce a la doctora",
+  "doctor.title":
+    "Dra. Anxhela, enfocada en odontologia precisa y delicada",
+  "doctor.text":
+    "La doctora combina diagnostico cuidadoso, comunicacion clara y planificacion moderna para que cada paciente se sienta informado y comodo.",
+  "doctor.text2":
+    "Las certificaciones y la formacion continua reflejan el compromiso de la clinica con tecnicas seguras, detalle estetico y resultados fiables a largo plazo.",
+  "doctor.cert1Title": "Odontologia estetica",
+  "doctor.cert1Text":
+    "Formacion enfocada en diseno natural de sonrisa y detalle.",
+  "doctor.cert2Title": "Cuidado endodontico",
+  "doctor.cert2Text":
+    "Educacion continua en tratamientos que conservan los dientes.",
+  "doctor.cert3Title": "Seguridad del paciente",
+  "doctor.cert3Text":
+    "Certificacion que respalda una atencion segura y constante.",
   "services.eyebrow": "Nuestros servicios",
   "services.title": "Atencion dental integral",
-  "services.availability": "Ver disponibilidad",
+  "services.availability": "Reservar una consulta",
   "service.generalTitle": "Odontologia general",
   "service.generalText": "Revisiones, limpieza y examenes.",
   "service.cosmeticTitle": "Odontologia estetica",
@@ -526,38 +663,40 @@ window.LOTUS_TRANSLATIONS.es = {
   "alt.tools": "Herramientas dentales preparadas para el tratamiento",
   "alt.room": "Sillon dental luminoso y sala clinica",
   "alt.patient": "Dentista tratando a un paciente",
-  reviews: [
-    {
-      name: "Emily R.",
-      text: "Personal excelente y clinica preciosa. Me senti comoda desde la primera visita.",
-      treatment: "Atencion general",
-      rating: 5,
-    },
-    {
-      name: "Robert T.",
-      text: "Profesionales, delicados y muy atentos. Mi sonrisa se ve mejor que nunca.",
-      treatment: "Cambio de sonrisa",
-      rating: 5,
-    },
-    {
-      name: "Sophia L.",
-      text: "La clinica se siente moderna, tranquila y premium. Muy recomendable.",
-      treatment: "Blanqueamiento",
-      rating: 5,
-    },
-    {
-      name: "Daniel M.",
-      text: "Me explicaron cada paso con claridad e hicieron que el proceso del implante fuera sencillo.",
-      treatment: "Implante dental",
-      rating: 5,
-    },
-    {
-      name: "Mia K.",
-      text: "Mi hija estaba nerviosa antes de la visita, pero el equipo fue paciente y amable.",
-      treatment: "Atencion pediatrica",
-      rating: 5,
-    },
-  ],
+  "alt.doctor": "Doctora en Lotus Clinic Dental",
+  "alt.certification": "Foto provisional de certificacion dental",
+  // reviews: [
+  //   {
+  //     name: "Emily R.",
+  //     text: "Personal excelente y clinica preciosa. Me senti comoda desde la primera visita.",
+  //     treatment: "Atencion general",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Robert T.",
+  //     text: "Profesionales, delicados y muy atentos. Mi sonrisa se ve mejor que nunca.",
+  //     treatment: "Cambio de sonrisa",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Sophia L.",
+  //     text: "La clinica se siente moderna, tranquila y premium. Muy recomendable.",
+  //     treatment: "Blanqueamiento",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Daniel M.",
+  //     text: "Me explicaron cada paso con claridad e hicieron que el proceso del implante fuera sencillo.",
+  //     treatment: "Implante dental",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Mia K.",
+  //     text: "Mi hija estaba nerviosa antes de la visita, pero el equipo fue paciente y amable.",
+  //     treatment: "Atencion pediatrica",
+  //     rating: 5,
+  //   },
+  // ],
   videos: [
     [
       "Cambio de sonrisa",
@@ -617,13 +756,43 @@ window.LOTUS_TRANSLATIONS.de = {
   "about.title": "Fuer gesunde und schoene Laecheln",
   "about.text":
     "Bei Lotus Clinic Dental bieten wir ruhige, moderne und umfassende Zahnversorgung fuer Patienten jeden Alters. Unser Ziel ist es, jeden Besuch angenehm und jedes Laecheln selbstbewusst zu machen.",
+  "about.text2":
+    "Die Klinik ist hell, organisiert und einladend gestaltet, mit Behandlungsraeumen fuer Privatsphaere, Hygiene und einen reibungslosen Ablauf von der Beratung bis zur Nachsorge.",
   "about.point1": "Patientenorientierter Ansatz",
   "about.point2": "Moderne Zahntechnik",
   "about.point3": "Entspannte Umgebung",
   "about.point4": "Umfassende Zahnversorgung",
+  "about.environmentEyebrow": "Klinikumgebung",
+  "about.environmentTitle": "Ruhig, modern und organisiert",
+  "about.environmentText":
+    "Jeder Bereich ist so gestaltet, dass Termine fuer Patienten und Familien klar, angenehm und effizient ablaufen.",
+  "about.hygieneEyebrow": "Hygienestandards",
+  "about.hygieneTitle": "Mit Sorgfalt vorbereitet",
+  "about.hygieneText":
+    "Behandlungsraeume werden mit sorgfaeltigen Reinigungsroutinen und Fokus auf Patientensicherheit gepflegt.",
+  "about.patientFlowEyebrow": "Patientenablauf",
+  "about.patientFlowTitle": "Einfach von Anfang bis Ende",
+  "about.patientFlowText":
+    "Wir erklaeren jeden Schritt klar, damit Patienten vor, waehrend und nach der Behandlung wissen, was sie erwartet.",
+  "doctor.eyebrow": "Lernen Sie die Aerztin kennen",
+  "doctor.title":
+    "Dr. Anxhela, fokussiert auf praezise und sanfte Zahnmedizin",
+  "doctor.text":
+    "Die Aerztin verbindet sorgfaeltige Diagnose, klare Kommunikation und moderne Behandlungsplanung, damit sich jeder Patient informiert und wohl fuehlt.",
+  "doctor.text2":
+    "Zertifikate und kontinuierliche Fortbildung zeigen das Engagement der Klinik fuer sichere Techniken, aesthetische Details und verlaessliche Langzeitergebnisse.",
+  "doctor.cert1Title": "Aesthetische Zahnmedizin",
+  "doctor.cert1Text":
+    "Fortbildung mit Fokus auf natuerliches Smile Design und Details.",
+  "doctor.cert2Title": "Endodontische Versorgung",
+  "doctor.cert2Text":
+    "Kontinuierliche Weiterbildung in zahnerhaltenden Behandlungen.",
+  "doctor.cert3Title": "Patientensicherheit",
+  "doctor.cert3Text":
+    "Zertifizierung fuer sichere und konstante Versorgung.",
   "services.eyebrow": "Unsere Leistungen",
   "services.title": "Umfassende Zahnversorgung",
-  "services.availability": "Verfuegbarkeit ansehen",
+  "services.availability": "Beratung buchen",
   "service.generalTitle": "Allgemeine Zahnmedizin",
   "service.generalText": "Kontrollen, Reinigung und Untersuchungen.",
   "service.cosmeticTitle": "Aesthetische Zahnmedizin",
@@ -674,38 +843,40 @@ window.LOTUS_TRANSLATIONS.de = {
   "alt.tools": "Dentalinstrumente fuer die Behandlung vorbereitet",
   "alt.room": "Heller Behandlungsstuhl und Klinikraum",
   "alt.patient": "Zahnarzt behandelt einen Patienten",
-  reviews: [
-    {
-      name: "Emily R.",
-      text: "Tolles Team und eine sehr schoene Klinik. Ich habe mich ab dem ersten Besuch wohlgefuehlt.",
-      treatment: "Allgemeine Versorgung",
-      rating: 5,
-    },
-    {
-      name: "Robert T.",
-      text: "Professionell, sanft und sehr aufmerksam. Mein Laecheln sieht besser aus als je zuvor.",
-      treatment: "Smile Makeover",
-      rating: 5,
-    },
-    {
-      name: "Sophia L.",
-      text: "Die Klinik wirkt modern, ruhig und hochwertig. Sehr empfehlenswert.",
-      treatment: "Bleaching",
-      rating: 5,
-    },
-    {
-      name: "Daniel M.",
-      text: "Sie haben jeden Schritt klar erklaert und den Implantatprozess einfach wirken lassen.",
-      treatment: "Zahnimplantat",
-      rating: 5,
-    },
-    {
-      name: "Mia K.",
-      text: "Meine Tochter war vor dem Besuch nervoes, aber das Team war geduldig und freundlich.",
-      treatment: "Kinderzahnmedizin",
-      rating: 5,
-    },
-  ],
+  "alt.doctor": "Aerztin bei Lotus Clinic Dental",
+  "alt.certification": "Platzhalterfoto fuer zahnmedizinisches Zertifikat",
+  // reviews: [
+  //   {
+  //     name: "Emily R.",
+  //     text: "Tolles Team und eine sehr schoene Klinik. Ich habe mich ab dem ersten Besuch wohlgefuehlt.",
+  //     treatment: "Allgemeine Versorgung",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Robert T.",
+  //     text: "Professionell, sanft und sehr aufmerksam. Mein Laecheln sieht besser aus als je zuvor.",
+  //     treatment: "Smile Makeover",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Sophia L.",
+  //     text: "Die Klinik wirkt modern, ruhig und hochwertig. Sehr empfehlenswert.",
+  //     treatment: "Bleaching",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Daniel M.",
+  //     text: "Sie haben jeden Schritt klar erklaert und den Implantatprozess einfach wirken lassen.",
+  //     treatment: "Zahnimplantat",
+  //     rating: 5,
+  //   },
+  //   {
+  //     name: "Mia K.",
+  //     text: "Meine Tochter war vor dem Besuch nervoes, aber das Team war geduldig und freundlich.",
+  //     treatment: "Kinderzahnmedizin",
+  //     rating: 5,
+  //   },
+  // ],
   videos: [
     [
       "Smile Makeover",
@@ -718,6 +889,155 @@ window.LOTUS_TRANSLATIONS.de = {
     [
       "Komplette Laechelreise",
       "Von der Beratung bis zum selbstbewussten finalen Laecheln.",
+    ],
+  ],
+};
+
+window.LOTUS_TRANSLATIONS.fr = {
+  "meta.title": "Lotus Clinic Dental",
+  "language.label": "Langue",
+  "brand.subtitle": "CLINIQUE DENTAIRE",
+  "nav.home": "Accueil",
+  "nav.about": "A propos",
+  "nav.services": "Services",
+  "nav.gallery": "Galerie",
+  "nav.reviews": "Avis",
+  "nav.contact": "Contact",
+  "nav.book": "Reserver",
+  "hero.eyebrow": "Bienvenue chez Lotus Clinic Dental",
+  "hero.titleStart": "La ou votre",
+  "hero.titleAccent": "plus beau sourire",
+  "hero.titleEnd": "commence",
+  "hero.text":
+    "Nous associons une technologie dentaire avancee a des soins personnalises pour creer des sourires sains, beaux et durables.",
+  "hero.book": "Prendre rendez-vous",
+  "hero.explore": "Decouvrir la clinique",
+  "stats.smiles": "Sourires",
+  "stats.years": "Annees",
+  "stats.rating": "Note",
+  "hero.open": "Ouvert aujourd'hui",
+  "hero.sameWeek": "Rendez-vous dans la semaine",
+  "hero.care": "Soins esthetiques et generaux",
+  "features.techTitle": "Technologie avancee",
+  "features.techText":
+    "Des outils modernes pour des traitements precis et confortables.",
+  "features.expertTitle": "Dentistes experts",
+  "features.expertText":
+    "Des professionnels experimentes dedies a votre sourire.",
+  "features.careTitle": "Soins personnalises",
+  "features.careText":
+    "Des plans de traitement adaptes a vos besoins.",
+  "marquee.digital": "Conception numerique du sourire",
+  "marquee.whitening": "Blanchiment doux",
+  "marquee.family": "Dentisterie familiale",
+  "marquee.implants": "Implants dentaires",
+  "marquee.emergency": "Soins d'urgence",
+  "marquee.cosmetic": "Dentisterie esthetique",
+  "about.eyebrow": "A propos",
+  "about.title": "Engages pour des sourires sains et beaux",
+  "about.text":
+    "Chez Lotus Clinic Dental, nous proposons des soins dentaires calmes, modernes et complets pour les patients de tous ages. Notre objectif est de rendre chaque visite confortable et chaque sourire plus confiant.",
+  "about.text2":
+    "Notre clinique est concue pour etre lumineuse, organisee et accueillante, avec des salles de traitement preparees pour la confidentialite, l'hygiene et une experience fluide de la consultation au suivi.",
+  "about.point1": "Approche centree sur le patient",
+  "about.point2": "Technologie dentaire moderne",
+  "about.point3": "Environnement relaxant",
+  "about.point4": "Soins dentaires complets",
+  "about.environmentEyebrow": "Environnement de la clinique",
+  "about.environmentTitle": "Calme, moderne et organise",
+  "about.environmentText":
+    "Chaque espace est organise pour rendre les rendez-vous clairs, confortables et efficaces pour les patients et les familles.",
+  "about.hygieneEyebrow": "Normes d'hygiene",
+  "about.hygieneTitle": "Prepare avec soin",
+  "about.hygieneText":
+    "Les espaces de traitement sont entretenus avec des routines de nettoyage rigoureuses et une attention particuliere a la securite du patient.",
+  "about.patientFlowEyebrow": "Parcours patient",
+  "about.patientFlowTitle": "Simple du debut a la fin",
+  "about.patientFlowText":
+    "Nous expliquons chaque etape clairement afin que les patients sachent a quoi s'attendre avant, pendant et apres le traitement.",
+  "doctor.eyebrow": "Rencontrez la docteure",
+  "doctor.title":
+    "Dr. Anxhela, orientee vers une dentisterie precise et douce",
+  "doctor.text":
+    "La docteure associe un diagnostic attentif, une communication claire et une planification moderne des traitements pour aider chaque patient a se sentir informe et a l'aise.",
+  "doctor.text2":
+    "Les certifications et la formation continue refletent l'engagement de la clinique envers des techniques sures, le detail esthetique et des resultats fiables a long terme.",
+  "doctor.cert1Title": "Dentisterie esthetique",
+  "doctor.cert1Text":
+    "Formation axee sur la conception naturelle du sourire et le detail.",
+  "doctor.cert2Title": "Soins endodontiques",
+  "doctor.cert2Text":
+    "Formation continue dans les traitements qui preservent les dents.",
+  "doctor.cert3Title": "Securite du patient",
+  "doctor.cert3Text":
+    "Certification soutenant des soins surs et constants.",
+  "services.eyebrow": "Nos services",
+  "services.title": "Soins dentaires complets",
+  "services.availability": "Reserver une consultation",
+  "service.generalTitle": "Dentisterie generale",
+  "service.generalText": "Controles, nettoyage et examens.",
+  "service.cosmeticTitle": "Dentisterie esthetique",
+  "service.cosmeticText": "Blanchiment, facettes et transformations du sourire.",
+  "service.implantsTitle": "Implants dentaires",
+  "service.implantsText": "Solutions durables pour les dents manquantes.",
+  "service.orthoTitle": "Orthodontie",
+  "service.orthoText": "Appareils et aligneurs pour des sourires harmonieux.",
+  "service.rootTitle": "Traitement de canal",
+  "service.rootText": "Soins doux pour conserver les dents naturelles.",
+  "service.pediatricTitle": "Dentisterie pediatrique",
+  "service.pediatricText": "Soins dentaires accueillants pour les enfants.",
+  "service.whiteningTitle": "Blanchiment dentaire",
+  "service.whiteningText": "Illuminez votre sourire en toute securite.",
+  "service.emergencyTitle": "Urgences dentaires",
+  "service.emergencyText": "Une aide rapide lorsque vous en avez besoin.",
+  "gallery.eyebrow": "Galerie",
+  "gallery.title": "Un environnement moderne et relaxant",
+  "videos.eyebrow": "Videos de patients",
+  "videos.title": "Histoires reelles de nos patients",
+  "videos.text":
+    "Regardez de courtes experiences de patients et des histoires de transformation du sourire.",
+  "reviews.eyebrow": "Avis",
+  "reviews.title": "Ce que disent nos patients",
+  "reviews.prev": "Avis precedent",
+  "reviews.next": "Avis suivant",
+  "reviews.pagination": "Pagination du carrousel d'avis",
+  "reviews.verified": "Patient verifie",
+  "reviews.show": "Afficher l'avis",
+  "reviews.star": "avis avec etoiles",
+  "contact.eyebrow": "Contact",
+  "contact.title": "Prenez votre rendez-vous",
+  "contact.text":
+    "Contactez-nous aujourd'hui et notre equipe vous aidera a obtenir un sourire plus sain et plus lumineux.",
+  "form.subject": "Nouvelle demande de rendez-vous - Lotus Clinic Dental",
+  "form.name": "Nom complet",
+  "form.phone": "Numero de telephone",
+  "form.email": "Adresse e-mail",
+  "form.message": "Message",
+  "form.submit": "Prendre rendez-vous",
+  "whatsapp.message":
+    "Bonjour Lotus Clinic Dental, je souhaite prendre rendez-vous. Pouvez-vous m'aider s'il vous plait ?",
+  "footer.rights": "© 2026 Lotus Clinic Dental. Tous droits reserves.",
+  "footer.privacy": "Politique de confidentialite",
+  "footer.terms": "Conditions d'utilisation",
+  "alt.hero": "Salle de traitement dentaire moderne",
+  "alt.office": "Cabinet dentaire",
+  "alt.tools": "Instruments dentaires prepares pour le traitement",
+  "alt.room": "Fauteuil dentaire lumineux et salle clinique",
+  "alt.patient": "Dentiste traitant un patient",
+  "alt.doctor": "Docteure chez Lotus Clinic Dental",
+  "alt.certification": "Image provisoire de certification dentaire",
+  videos: [
+    [
+      "Transformation du sourire",
+      "Un patient partage son chemin vers la confiance.",
+    ],
+    [
+      "Histoire d'implant dentaire",
+      "Des resultats naturels avec des soins modernes.",
+    ],
+    [
+      "Parcours complet du sourire",
+      "De la consultation au sourire final en toute confiance.",
     ],
   ],
 };
