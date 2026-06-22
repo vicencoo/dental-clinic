@@ -1,4 +1,4 @@
-import { videoAssets } from "../src/constants/videoAssets.js";
+import { videoAssets } from "../constants/videoAssets.js";
 import { renderImages } from "./gallery.js";
 import { renderReviews, setReviewsData } from "./reviews.js";
 import { renderVideos } from "./videos.js";

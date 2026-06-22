@@ -1,4 +1,4 @@
-import { gallery } from "../src/constants/gallery.js";
+import { gallery } from "../constants/gallery.js";
 import { observeRevealItems } from "../utils/observeRevealItems.js";
 
 const galleryWrapper = document.getElementById("gallery-wrapper");
