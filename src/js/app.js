@@ -2,6 +2,7 @@ import { videoAssets } from "../constants/videoAssets.js";
 import { aboutGallery } from "./aboutGallery.js";
 import { renderImages } from "./gallery.js";
 import { renderReviews, setReviewsData } from "./reviews.js";
+import { servicesJs } from "./services.js";
 import { renderVideos } from "./videos.js";
 
 const translations = window.LOTUS_TRANSLATIONS || {};
@@ -14,7 +15,6 @@ let videos = [];
 
 const revealItems = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll("[data-counter]");
-const i18nElements = document.querySelectorAll("[data-i18n]");
 const i18nPlaceholderElements = document.querySelectorAll(
   "[data-i18n-placeholder]",
 );
@@ -472,7 +472,7 @@ const applyLanguage = (language) => {
   updateLanguageButton();
   updateWhatsappLink();
 
-  i18nElements.forEach((element) => {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
     element.textContent =
       dictionary[element.dataset.i18n] || element.textContent;
   });
@@ -583,6 +583,7 @@ updateBackToTopVisibility();
 startCounters();
 renderImages();
 aboutGallery();
+servicesJs();
 // renderVideos();
 
 applyLanguage(currentLanguage);

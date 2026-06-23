@@ -1289,6 +1289,16 @@
       background-color: color-mix(in oklab, #1bb7c9 25%, transparent);
     }
   }
+  .last\:bg-\[\#0d2430\] {
+    &:last-child {
+      background-color: #0d2430;
+    }
+  }
+  .last\:text-white {
+    &:last-child {
+      color: var(--color-white);
+    }
+  }
   .hover\:-translate-y-0\.5 {
     &:hover {
       @media (hover: hover) {

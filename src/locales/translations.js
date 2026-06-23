@@ -34,7 +34,7 @@ window.LOTUS_TRANSLATIONS = {
     "features.careTitle": "Kujdes i personalizuar",
     "features.careText": "Plane trajtimi të krijuara sipas nevojave tuaja.",
     "marquee.digital": "Dizajn dixhital i buzëqeshjes",
-    "marquee.whitening": "Zbardhim i butë",
+    "marquee.whitening": "Zbardhime",
     "marquee.family": "Dentistri familjare",
     "marquee.implants": "Implante dentare",
     "marquee.emergency": "Kujdes emergjent",
@@ -79,12 +79,36 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Stomatologe",
     "doctor.cert3Title": "Siguria e pacientit",
     "doctor.cert3Text": "Edona Senaj Infermiere",
-    "doctor.cert4Text": "Dr. Olta Qahi Mjeke Ortodonte",
+    "doctor.cert4Text": "Dr. Olta Qahi",
     "doctor.cert5Text":
       "Komunikim i ngrohtë nga mirëseardhja e parë deri te kontrolli pas trajtimit.",
     "services.eyebrow": "Shërbimet tona",
     "services.title": "Kujdes dentar i plotë",
     "services.availability": "Rezervo një konsultë",
+    "clinicService.generalTitle": "Stomatologji e Përgjithshme",
+    "clinicService.generalText":
+      "Kontrolle, pastrime dhe trajtime rutinë për ruajtjen e shëndetit oral afatgjatë.",
+    "clinicService.implantsTitle": "Zgjidhje me Implante",
+    "clinicService.implantsText":
+      "Zëvendësim i sigurt dhe afatgjatë i dhëmbëve të munguar me implante natyrale.",
+    "clinicService.cosmeticTitle": "Dentistri Kozmetike",
+    "clinicService.cosmeticText":
+      "Përmirësoni estetikën e buzëqeshjes me veneers, bonding dhe trajtime moderne kozmetike.",
+    "clinicService.whiteningTitle": "Zbardhim Dhëmbësh",
+    "clinicService.whiteningText":
+      "Trajtime profesionale për një buzëqeshje më të bardhë, të ndritshme dhe më të sigurt.",
+    "clinicService.pediatricTitle": "Stomatologji Pediatrike",
+    "clinicService.pediatricText":
+      "Kujdes i specializuar dhe miqësor për fëmijët në çdo fazë të zhvillimit dentar.",
+    "clinicService.advancedTitle": "Kujdes Oral i Avancuar",
+    "clinicService.advancedText":
+      "Trajtime të avancuara për zgjidhjen e problemeve komplekse dentare dhe orale.",
+    "clinicService.comfortTitle": "Stomatologji Komode",
+    "clinicService.comfortText":
+      "Përvojë dentare e qetë dhe pa stres në një ambient modern dhe mikpritës.",
+    "clinicService.emergencyTitle": "Kujdes Emergjent",
+    "clinicService.emergencyText":
+      "Ndihmë e menjëhershme për dhimbje, trauma dhe urgjenca dentare.",
     "service.generalTitle": "Dentistri e përgjithshme",
     "service.generalText": "Kontrolle, pastrim dhe ekzaminime.",
     "service.cosmeticTitle": "Dentistri estetike",
@@ -185,7 +209,7 @@ window.LOTUS_TRANSLATIONS = {
     "features.careTitle": "Personalized Care",
     "features.careText": "Treatment plans made specifically for your needs.",
     "marquee.digital": "Digital Smile Design",
-    "marquee.whitening": "Gentle Whitening",
+    "marquee.whitening": "Whitening",
     "marquee.family": "Family Dentistry",
     "marquee.implants": "Dental Implants",
     "marquee.emergency": "Emergency Care",
@@ -229,12 +253,36 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Dentist",
     "doctor.cert3Title": "Patient Safety",
     "doctor.cert3Text": "Edona Senaj Nurse",
-    "doctor.cert4Text": "Dr. Olta Qahi Orthodontist",
+    "doctor.cert4Text": "Dr. Olta Qahi",
     "doctor.cert5Text":
       "Warm communication from the first welcome to the final follow-up.",
     "services.eyebrow": "Our Services",
     "services.title": "Comprehensive Dental Care",
     "services.availability": "Book a Consultation",
+    "clinicService.generalTitle": "General Dentistry",
+    "clinicService.generalText":
+      "Checkups, cleanings, and routine treatments to maintain long-term oral health.",
+    "clinicService.implantsTitle": "Implant Solutions",
+    "clinicService.implantsText":
+      "Safe, long-lasting replacement of missing teeth with natural-looking implants.",
+    "clinicService.cosmeticTitle": "Cosmetic Dentistry",
+    "clinicService.cosmeticText":
+      "Improve smile aesthetics with veneers, bonding, and modern cosmetic treatments.",
+    "clinicService.whiteningTitle": "Teeth Whitening",
+    "clinicService.whiteningText":
+      "Professional treatments for a whiter, brighter, more confident smile.",
+    "clinicService.pediatricTitle": "Pediatric Dentistry",
+    "clinicService.pediatricText":
+      "Specialized, friendly care for children at every stage of dental development.",
+    "clinicService.advancedTitle": "Advanced Oral Care",
+    "clinicService.advancedText":
+      "Advanced treatments for complex dental and oral problems.",
+    "clinicService.comfortTitle": "Comfort Dentistry",
+    "clinicService.comfortText":
+      "A calm, stress-free dental experience in a modern, welcoming environment.",
+    "clinicService.emergencyTitle": "Emergency Care",
+    "clinicService.emergencyText":
+      "Immediate help for pain, trauma, and dental emergencies.",
     "service.generalTitle": "General Dentistry",
     "service.generalText": "Checkups, cleaning, and exams.",
     "service.cosmeticTitle": "Cosmetic Dentistry",
@@ -362,7 +410,7 @@ window.LOTUS_TRANSLATIONS = {
     "features.careText":
       "Piani di trattamento creati in base alle tue esigenze.",
     "marquee.digital": "Design digitale del sorriso",
-    "marquee.whitening": "Sbiancamento delicato",
+    "marquee.whitening": "Sbiancamenti",
     "marquee.family": "Odontoiatria familiare",
     "marquee.implants": "Impianti dentali",
     "marquee.emergency": "Cure d'urgenza",
@@ -407,12 +455,36 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Medico dentista",
     "doctor.cert3Title": "Sicurezza del paziente",
     "doctor.cert3Text": "Edona Senaj Infermiera",
-    "doctor.cert4Text": "Dr. Olta Qahi Ortodontista",
+    "doctor.cert4Text": "Dr. Olta Qahi",
     "doctor.cert5Text":
       "Comunicazione calorosa dal primo benvenuto al controllo finale.",
     "services.eyebrow": "I nostri servizi",
     "services.title": "Cure dentali complete",
     "services.availability": "Prenota una consulenza",
+    "clinicService.generalTitle": "Odontoiatria generale",
+    "clinicService.generalText":
+      "Controlli, pulizie e trattamenti di routine per mantenere la salute orale a lungo termine.",
+    "clinicService.implantsTitle": "Soluzioni con impianti",
+    "clinicService.implantsText":
+      "Sostituzione sicura e duratura dei denti mancanti con impianti dall'aspetto naturale.",
+    "clinicService.cosmeticTitle": "Odontoiatria estetica",
+    "clinicService.cosmeticText":
+      "Migliora l'estetica del sorriso con faccette, bonding e trattamenti cosmetici moderni.",
+    "clinicService.whiteningTitle": "Sbiancamento dentale",
+    "clinicService.whiteningText":
+      "Trattamenti professionali per un sorriso piu bianco, luminoso e sicuro.",
+    "clinicService.pediatricTitle": "Odontoiatria pediatrica",
+    "clinicService.pediatricText":
+      "Cure specializzate e amichevoli per bambini in ogni fase dello sviluppo dentale.",
+    "clinicService.advancedTitle": "Cura orale avanzata",
+    "clinicService.advancedText":
+      "Trattamenti avanzati per risolvere problemi dentali e orali complessi.",
+    "clinicService.comfortTitle": "Odontoiatria confortevole",
+    "clinicService.comfortText":
+      "Un'esperienza dentale tranquilla e senza stress in un ambiente moderno e accogliente.",
+    "clinicService.emergencyTitle": "Cure d'urgenza",
+    "clinicService.emergencyText":
+      "Aiuto immediato per dolore, traumi e urgenze dentali.",
     "service.generalTitle": "Odontoiatria generale",
     "service.generalText": "Controlli, pulizia ed esami.",
     "service.cosmeticTitle": "Odontoiatria estetica",
@@ -517,7 +589,7 @@ window.LOTUS_TRANSLATIONS.es = {
   "features.careTitle": "Atencion personalizada",
   "features.careText": "Planes de tratamiento creados para tus necesidades.",
   "marquee.digital": "Diseno digital de sonrisa",
-  "marquee.whitening": "Blanqueamiento suave",
+  "marquee.whitening": "Blanqueamientos",
   "marquee.family": "Odontologia familiar",
   "marquee.implants": "Implantes dentales",
   "marquee.emergency": "Atencion de urgencia",
@@ -562,12 +634,36 @@ window.LOTUS_TRANSLATIONS.es = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Odontologa",
   "doctor.cert3Title": "Seguridad del paciente",
   "doctor.cert3Text": "Edona Senaj Enfermera",
-  "doctor.cert4Text": "Dr. Olta Qahi Ortodoncista",
+  "doctor.cert4Text": "Dr. Olta Qahi",
   "doctor.cert5Text":
     "Comunicacion calida desde la primera bienvenida hasta el seguimiento final.",
   "services.eyebrow": "Nuestros servicios",
   "services.title": "Atencion dental integral",
   "services.availability": "Reservar una consulta",
+  "clinicService.generalTitle": "Odontologia general",
+  "clinicService.generalText":
+    "Revisiones, limpiezas y tratamientos rutinarios para mantener la salud oral a largo plazo.",
+  "clinicService.implantsTitle": "Soluciones con implantes",
+  "clinicService.implantsText":
+    "Reemplazo seguro y duradero de dientes ausentes con implantes de aspecto natural.",
+  "clinicService.cosmeticTitle": "Odontologia estetica",
+  "clinicService.cosmeticText":
+    "Mejora la estetica de tu sonrisa con carillas, bonding y tratamientos cosmeticos modernos.",
+  "clinicService.whiteningTitle": "Blanqueamiento dental",
+  "clinicService.whiteningText":
+    "Tratamientos profesionales para una sonrisa mas blanca, luminosa y segura.",
+  "clinicService.pediatricTitle": "Odontologia pediatrica",
+  "clinicService.pediatricText":
+    "Atencion especializada y amable para ninos en cada etapa del desarrollo dental.",
+  "clinicService.advancedTitle": "Cuidado oral avanzado",
+  "clinicService.advancedText":
+    "Tratamientos avanzados para resolver problemas dentales y orales complejos.",
+  "clinicService.comfortTitle": "Odontologia comoda",
+  "clinicService.comfortText":
+    "Una experiencia dental tranquila y sin estres en un ambiente moderno y acogedor.",
+  "clinicService.emergencyTitle": "Urgencias dentales",
+  "clinicService.emergencyText":
+    "Ayuda inmediata para dolor, traumatismos y urgencias dentales.",
   "service.generalTitle": "Odontologia general",
   "service.generalText": "Revisiones, limpieza y examenes.",
   "service.cosmeticTitle": "Odontologia estetica",
@@ -673,7 +769,7 @@ window.LOTUS_TRANSLATIONS.de = {
   "features.careText":
     "Behandlungsplaene, die genau auf Ihre Beduerfnisse abgestimmt sind.",
   "marquee.digital": "Digitales Smile Design",
-  "marquee.whitening": "Sanftes Bleaching",
+  "marquee.whitening": "Bleaching",
   "marquee.family": "Familienzahnmedizin",
   "marquee.implants": "Zahnimplantate",
   "marquee.emergency": "Notfallversorgung",
@@ -718,12 +814,36 @@ window.LOTUS_TRANSLATIONS.de = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Zahnaerztin",
   "doctor.cert3Title": "Patientensicherheit",
   "doctor.cert3Text": "Edona Senaj Krankenschwester",
-  "doctor.cert4Text": "Dr. Olta Qahi Kieferorthopaedin",
+  "doctor.cert4Text": "Dr. Olta Qahi",
   "doctor.cert5Text":
     "Warme Kommunikation vom ersten Empfang bis zur letzten Nachkontrolle.",
   "services.eyebrow": "Unsere Leistungen",
   "services.title": "Umfassende Zahnversorgung",
   "services.availability": "Beratung buchen",
+  "clinicService.generalTitle": "Allgemeine Zahnmedizin",
+  "clinicService.generalText":
+    "Kontrollen, Reinigungen und Routinebehandlungen fuer langfristige Mundgesundheit.",
+  "clinicService.implantsTitle": "Implantatloesungen",
+  "clinicService.implantsText":
+    "Sicherer und langlebiger Ersatz fehlender Zaehne mit natuerlich wirkenden Implantaten.",
+  "clinicService.cosmeticTitle": "Aesthetische Zahnmedizin",
+  "clinicService.cosmeticText":
+    "Verbessern Sie die Aesthetik Ihres Laechelns mit Veneers, Bonding und modernen kosmetischen Behandlungen.",
+  "clinicService.whiteningTitle": "Zahnaufhellung",
+  "clinicService.whiteningText":
+    "Professionelle Behandlungen fuer ein weisseres, strahlenderes und sichereres Laecheln.",
+  "clinicService.pediatricTitle": "Kinderzahnmedizin",
+  "clinicService.pediatricText":
+    "Spezialisierte und freundliche Betreuung fuer Kinder in jeder Phase der Zahnentwicklung.",
+  "clinicService.advancedTitle": "Fortgeschrittene Mundpflege",
+  "clinicService.advancedText":
+    "Fortgeschrittene Behandlungen fuer komplexe Zahn- und Mundprobleme.",
+  "clinicService.comfortTitle": "Komfortable Zahnmedizin",
+  "clinicService.comfortText":
+    "Eine ruhige, stressfreie Zahnerfahrung in einer modernen und einladenden Umgebung.",
+  "clinicService.emergencyTitle": "Notfallversorgung",
+  "clinicService.emergencyText":
+    "Sofortige Hilfe bei Schmerzen, Trauma und zahnmedizinischen Notfaellen.",
   "service.generalTitle": "Allgemeine Zahnmedizin",
   "service.generalText": "Kontrollen, Reinigung und Untersuchungen.",
   "service.cosmeticTitle": "Aesthetische Zahnmedizin",
@@ -829,7 +949,7 @@ window.LOTUS_TRANSLATIONS.fr = {
   "features.careTitle": "Soins personnalises",
   "features.careText": "Des plans de traitement adaptes a vos besoins.",
   "marquee.digital": "Conception numerique du sourire",
-  "marquee.whitening": "Blanchiment doux",
+  "marquee.whitening": "Blanchiments",
   "marquee.family": "Dentisterie familiale",
   "marquee.implants": "Implants dentaires",
   "marquee.emergency": "Soins d'urgence",
@@ -874,12 +994,36 @@ window.LOTUS_TRANSLATIONS.fr = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Dentiste",
   "doctor.cert3Title": "Securite du patient",
   "doctor.cert3Text": "Edona Senaj Infirmiere",
-  "doctor.cert4Text": "Dr. Olta Qahi Orthodontiste",
+  "doctor.cert4Text": "Dr. Olta Qahi",
   "doctor.cert5Text":
     "Communication chaleureuse du premier accueil au suivi final.",
   "services.eyebrow": "Nos services",
   "services.title": "Soins dentaires complets",
   "services.availability": "Reserver une consultation",
+  "clinicService.generalTitle": "Dentisterie generale",
+  "clinicService.generalText":
+    "Controles, nettoyages et traitements de routine pour maintenir une sante bucco-dentaire durable.",
+  "clinicService.implantsTitle": "Solutions implantaires",
+  "clinicService.implantsText":
+    "Remplacement sur et durable des dents manquantes avec des implants d'apparence naturelle.",
+  "clinicService.cosmeticTitle": "Dentisterie esthetique",
+  "clinicService.cosmeticText":
+    "Ameliorez l'esthetique du sourire avec facettes, bonding et traitements cosmetiques modernes.",
+  "clinicService.whiteningTitle": "Blanchiment dentaire",
+  "clinicService.whiteningText":
+    "Traitements professionnels pour un sourire plus blanc, lumineux et confiant.",
+  "clinicService.pediatricTitle": "Dentisterie pediatrique",
+  "clinicService.pediatricText":
+    "Soins specialises et bienveillants pour les enfants a chaque etape du developpement dentaire.",
+  "clinicService.advancedTitle": "Soins bucco-dentaires avances",
+  "clinicService.advancedText":
+    "Traitements avances pour resoudre les problemes dentaires et bucco-dentaires complexes.",
+  "clinicService.comfortTitle": "Dentisterie confortable",
+  "clinicService.comfortText":
+    "Une experience dentaire calme et sans stress dans un environnement moderne et accueillant.",
+  "clinicService.emergencyTitle": "Urgences dentaires",
+  "clinicService.emergencyText":
+    "Aide immediate en cas de douleur, traumatisme et urgence dentaire.",
   "service.generalTitle": "Dentisterie generale",
   "service.generalText": "Controles, nettoyage et examens.",
   "service.cosmeticTitle": "Dentisterie esthetique",
