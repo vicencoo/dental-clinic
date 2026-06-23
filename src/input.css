@@ -303,8 +303,9 @@ button {
 
 .about-gallery-track {
   cursor: grab;
+  overscroll-behavior-x: contain;
   scrollbar-width: none;
-  touch-action: pan-y;
+  touch-action: pan-x pan-y pinch-zoom;
   user-select: none;
 }
 
@@ -319,6 +320,10 @@ button {
 
 .about-gallery-track.is-dragging .about-gallery-image {
   pointer-events: none;
+}
+
+.about-gallery-image {
+  -webkit-user-drag: none;
 }
 
 .about-gallery-image,

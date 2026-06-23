@@ -1,4 +1,5 @@
 import { videoAssets } from "../constants/videoAssets.js";
+import { aboutGallery } from "./aboutGallery.js";
 import { renderImages } from "./gallery.js";
 import { renderReviews, setReviewsData } from "./reviews.js";
 import { renderVideos } from "./videos.js";
@@ -288,35 +289,95 @@ const startCounters = () => {
 const scrollAboutGallery = (direction) => {
   if (!aboutGalleryTrack) return;
 
-  const firstImage = aboutGalleryTrack.querySelector("img");
-  const scrollAmount =
-    firstImage?.getBoundingClientRect().width || aboutGalleryTrack.clientWidth;
-
   aboutGalleryTrack.scrollBy({
-    left: direction * (scrollAmount + 16),
-    behavior: "smooth",
+    left: direction * aboutGalleryTrack.clientWidth * 0.7,
+    behavior: "auto",
   });
+};
+
+const enableAboutGalleryWheel = () => {
+  if (!aboutGalleryTrack) return;
+
+  aboutGalleryTrack.addEventListener(
+    "wheel",
+    (event) => {
+      const delta =
+        Math.abs(event.deltaX) > Math.abs(event.deltaY)
+          ? event.deltaX
+          : event.deltaY;
+      const direction = Math.sign(delta);
+
+      if (!direction) return;
+
+      const atStart = aboutGalleryTrack.scrollLeft <= 2;
+      const atEnd =
+        aboutGalleryTrack.scrollLeft + aboutGalleryTrack.clientWidth >=
+        aboutGalleryTrack.scrollWidth - 2;
+
+      if ((direction < 0 && atStart) || (direction > 0 && atEnd)) {
+        return;
+      }
+
+      event.preventDefault();
+      aboutGalleryTrack.scrollLeft += delta;
+    },
+    { passive: false },
+  );
 };
 
 const enableAboutGalleryDrag = () => {
   if (!aboutGalleryTrack) return;
 
   let isDragging = false;
+  let hasDragged = false;
   let startX = 0;
   let startScrollLeft = 0;
+  let lastX = 0;
+  let lastTime = 0;
+  let dragVelocity = 0;
+  let momentumFrame;
+
+  const stopMomentum = () => {
+    window.cancelAnimationFrame(momentumFrame);
+  };
+
+  const startMomentum = () => {
+    stopMomentum();
+
+    const glide = () => {
+      dragVelocity *= 0.94;
+
+      if (Math.abs(dragVelocity) < 0.08) return;
+
+      aboutGalleryTrack.scrollLeft -= dragVelocity * 16;
+      momentumFrame = window.requestAnimationFrame(glide);
+    };
+
+    momentumFrame = window.requestAnimationFrame(glide);
+  };
 
   const stopDragging = () => {
     if (!isDragging) return;
 
     isDragging = false;
     aboutGalleryTrack.classList.remove("is-dragging");
+
+    if (hasDragged) {
+      startMomentum();
+    }
   };
 
   aboutGalleryTrack.addEventListener("pointerdown", (event) => {
-    if (event.button !== 0) return;
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    if (event.pointerType !== "mouse") return;
 
+    stopMomentum();
     isDragging = true;
+    hasDragged = false;
     startX = event.clientX;
+    lastX = event.clientX;
+    lastTime = performance.now();
+    dragVelocity = 0;
     startScrollLeft = aboutGalleryTrack.scrollLeft;
     aboutGalleryTrack.classList.add("is-dragging");
     aboutGalleryTrack.setPointerCapture(event.pointerId);
@@ -325,9 +386,32 @@ const enableAboutGalleryDrag = () => {
   aboutGalleryTrack.addEventListener("pointermove", (event) => {
     if (!isDragging) return;
 
-    event.preventDefault();
-    aboutGalleryTrack.scrollLeft = startScrollLeft - (event.clientX - startX);
+    const dragDistance = event.clientX - startX;
+    const now = performance.now();
+    const elapsed = Math.max(16, now - lastTime);
+
+    if (Math.abs(dragDistance) > 4) {
+      hasDragged = true;
+      event.preventDefault();
+    }
+
+    aboutGalleryTrack.scrollLeft = startScrollLeft - dragDistance;
+    dragVelocity = ((event.clientX - lastX) / elapsed) * 0.85;
+    lastX = event.clientX;
+    lastTime = now;
   });
+
+  aboutGalleryTrack.addEventListener(
+    "click",
+    (event) => {
+      if (!hasDragged) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+      hasDragged = false;
+    },
+    true,
+  );
 
   aboutGalleryTrack.addEventListener("pointerup", stopDragging);
   aboutGalleryTrack.addEventListener("pointercancel", stopDragging);
@@ -444,6 +528,7 @@ navLinks.forEach((link) => {
 
 aboutGalleryPrev?.addEventListener("click", () => scrollAboutGallery(-1));
 aboutGalleryNext?.addEventListener("click", () => scrollAboutGallery(1));
+enableAboutGalleryWheel();
 enableAboutGalleryDrag();
 
 let activeNavFrame;
@@ -497,6 +582,7 @@ syncActiveNav();
 updateBackToTopVisibility();
 startCounters();
 renderImages();
+aboutGallery();
 // renderVideos();
 
 applyLanguage(currentLanguage);
