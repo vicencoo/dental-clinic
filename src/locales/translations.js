@@ -74,16 +74,12 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.text2":
       "Çdo pjesëtar i ekipit mbështet një përvojë të lehtë për pacientin me komunikim të kujdesshëm, higjienë dhe vëmendje ndaj detajeve.",
     "doctor.cert1Title": "Dentistri estetike",
-    "doctor.cert1Text":
-      "Kujdes i butë dhe planifikim i qartë trajtimi për çdo pacient.",
+    "doctor.cert1Text": "Anxhela Alimaj Kuçaj Mjeke Stomatologe Ceo",
     "doctor.cert2Title": "Kujdes endodontik",
-    "doctor.cert2Text":
-      "Mbështetje miqësore që i bën takimet të ndihen të thjeshta dhe të qeta.",
+    "doctor.cert2Text": "Mjeke Stomatologe",
     "doctor.cert3Title": "Siguria e pacientit",
-    "doctor.cert3Text":
-      "Përgatitje e kujdesshme e dhomave të trajtimit me sigurinë e pacientit në fokus.",
-    "doctor.cert4Text":
-      "Asistencë e fokusuar te detajet për kujdes të pastër, të organizuar dhe komod.",
+    "doctor.cert3Text": "Infermiere",
+    "doctor.cert4Text": "Olta Qahi mjeke Ortodonte",
     "doctor.cert5Text":
       "Komunikim i ngrohtë nga mirëseardhja e parë deri te kontrolli pas trajtimit.",
     "services.eyebrow": "Shërbimet tona",
@@ -228,16 +224,12 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.text2":
       "Every member of the team supports a smooth patient experience with careful communication, hygiene, and attention to detail.",
     "doctor.cert1Title": "Aesthetic Dentistry",
-    "doctor.cert1Text":
-      "Gentle care and clear treatment planning for every patient.",
+    "doctor.cert1Text": "Anxhela Alimaj Kuçaj Dentist, CEO",
     "doctor.cert2Title": "Endodontic Care",
-    "doctor.cert2Text":
-      "Friendly support that helps appointments feel simple and relaxed.",
+    "doctor.cert2Text": "Dentist",
     "doctor.cert3Title": "Patient Safety",
-    "doctor.cert3Text":
-      "Careful preparation of treatment rooms with patient safety in mind.",
-    "doctor.cert4Text":
-      "Detail-focused assistance for clean, organized, comfortable care.",
+    "doctor.cert3Text": "Nurse",
+    "doctor.cert4Text": "Olta Qahi Orthodontist",
     "doctor.cert5Text":
       "Warm communication from the first welcome to the final follow-up.",
     "services.eyebrow": "Our Services",
@@ -410,16 +402,12 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.text2":
       "Ogni membro del team supporta un'esperienza fluida per il paziente con comunicazione attenta, igiene e cura dei dettagli.",
     "doctor.cert1Title": "Odontoiatria estetica",
-    "doctor.cert1Text":
-      "Cura delicata e pianificazione chiara del trattamento per ogni paziente.",
+    "doctor.cert1Text": "Anxhela Alimaj Kuçaj Medico dentista, CEO",
     "doctor.cert2Title": "Cure endodontiche",
-    "doctor.cert2Text":
-      "Supporto cordiale che rende gli appuntamenti semplici e rilassati.",
+    "doctor.cert2Text": "Medico dentista",
     "doctor.cert3Title": "Sicurezza del paziente",
-    "doctor.cert3Text":
-      "Preparazione accurata delle sale trattamento con la sicurezza del paziente al centro.",
-    "doctor.cert4Text":
-      "Assistenza attenta ai dettagli per cure pulite, organizzate e confortevoli.",
+    "doctor.cert3Text": "Infermiera",
+    "doctor.cert4Text": "Olta Qahi Ortodontista",
     "doctor.cert5Text":
       "Comunicazione calorosa dal primo benvenuto al controllo finale.",
     "services.eyebrow": "I nostri servizi",
@@ -569,16 +557,12 @@ window.LOTUS_TRANSLATIONS.es = {
   "doctor.text2":
     "Cada miembro del equipo apoya una experiencia fluida para el paciente con comunicacion cuidadosa, higiene y atencion al detalle.",
   "doctor.cert1Title": "Odontologia estetica",
-  "doctor.cert1Text":
-    "Atencion delicada y planificacion clara del tratamiento para cada paciente.",
+  "doctor.cert1Text": "Anxhela Alimaj Kuçaj Odontologa, CEO",
   "doctor.cert2Title": "Cuidado endodontico",
-  "doctor.cert2Text":
-    "Apoyo amable que ayuda a que las citas se sientan simples y relajadas.",
+  "doctor.cert2Text": "Odontologa",
   "doctor.cert3Title": "Seguridad del paciente",
-  "doctor.cert3Text":
-    "Preparacion cuidadosa de las salas de tratamiento con la seguridad del paciente en mente.",
-  "doctor.cert4Text":
-    "Asistencia enfocada en los detalles para una atencion limpia, organizada y comoda.",
+  "doctor.cert3Text": "Enfermera",
+  "doctor.cert4Text": "Olta Qahi Ortodoncista",
   "doctor.cert5Text":
     "Comunicacion calida desde la primera bienvenida hasta el seguimiento final.",
   "services.eyebrow": "Nuestros servicios",
@@ -729,16 +713,12 @@ window.LOTUS_TRANSLATIONS.de = {
   "doctor.text2":
     "Jedes Teammitglied unterstuetzt eine reibungslose Patientenerfahrung mit sorgfaeltiger Kommunikation, Hygiene und Liebe zum Detail.",
   "doctor.cert1Title": "Aesthetische Zahnmedizin",
-  "doctor.cert1Text":
-    "Sanfte Betreuung und klare Behandlungsplanung fuer jeden Patienten.",
+  "doctor.cert1Text": "Anxhela Alimaj Kuçaj Zahnaerztin, CEO",
   "doctor.cert2Title": "Endodontische Versorgung",
-  "doctor.cert2Text":
-    "Freundliche Unterstuetzung, damit Termine einfach und entspannt wirken.",
+  "doctor.cert2Text": "Zahnaerztin",
   "doctor.cert3Title": "Patientensicherheit",
-  "doctor.cert3Text":
-    "Sorgfaeltige Vorbereitung der Behandlungsraeume mit Patientensicherheit im Blick.",
-  "doctor.cert4Text":
-    "Detailorientierte Assistenz fuer saubere, organisierte und angenehme Betreuung.",
+  "doctor.cert3Text": "Krankenschwester",
+  "doctor.cert4Text": "Olta Qahi Kieferorthopaedin",
   "doctor.cert5Text":
     "Warme Kommunikation vom ersten Empfang bis zur letzten Nachkontrolle.",
   "services.eyebrow": "Unsere Leistungen",
@@ -889,16 +869,12 @@ window.LOTUS_TRANSLATIONS.fr = {
   "doctor.text2":
     "Chaque membre de l'equipe soutient une experience fluide avec une communication attentive, l'hygiene et le souci du detail.",
   "doctor.cert1Title": "Dentisterie esthetique",
-  "doctor.cert1Text":
-    "Soins doux et planification claire du traitement pour chaque patient.",
+  "doctor.cert1Text": "Anxhela Alimaj Kuçaj Dentiste, CEO",
   "doctor.cert2Title": "Soins endodontiques",
-  "doctor.cert2Text":
-    "Soutien amical pour rendre les rendez-vous simples et detendus.",
+  "doctor.cert2Text": "Dentiste",
   "doctor.cert3Title": "Securite du patient",
-  "doctor.cert3Text":
-    "Preparation soigneuse des salles de traitement avec la securite du patient en tete.",
-  "doctor.cert4Text":
-    "Assistance axee sur les details pour des soins propres, organises et confortables.",
+  "doctor.cert3Text": "Infirmiere",
+  "doctor.cert4Text": "Olta Qahi Orthodontiste",
   "doctor.cert5Text":
     "Communication chaleureuse du premier accueil au suivi final.",
   "services.eyebrow": "Nos services",

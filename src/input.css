@@ -304,6 +304,7 @@ button {
 .about-gallery-track {
   cursor: grab;
   overscroll-behavior-x: contain;
+  padding-top: 0.5rem;
   scrollbar-width: none;
   touch-action: pan-x pan-y pinch-zoom;
   user-select: none;
@@ -356,6 +357,30 @@ button {
 
 .staff-card:hover img {
   transform: scale(1.04);
+}
+
+.feature-full-image {
+  background: #ffffff;
+  border-radius: inherit;
+  overflow: hidden;
+  object-fit: contain !important;
+}
+
+.dental-2-image {
+  border-radius: 2rem !important;
+}
+
+@media (max-width: 1023px) {
+  .mobile-full-image,
+  .mobile-hero-full-image {
+    height: auto !important;
+    max-height: calc(100svh - 7rem);
+    object-fit: contain !important;
+  }
+
+  .mobile-hero-full-image {
+    max-height: calc(100svh - 10rem);
+  }
 }
 
 @keyframes float-soft {

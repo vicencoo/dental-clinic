@@ -15,6 +15,8 @@
     <meta name="author" content="Lotus Clinic Dental" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0c8da3" />
+    <link rel="icon" type="image/webp" href="/public/meta/lotus-logo.webp" />
+    <link rel="apple-touch-icon" href="/public/meta/lotus-logo.webp" />
     <link rel="canonical" href="https://lotusdental.al/" />
     <link rel="alternate" href="https://lotusdental.al/" hreflang="sq" />
     <link
@@ -56,7 +58,7 @@
     <meta property="og:url" content="https://lotusdental.al/" />
     <meta
       property="og:image"
-      content="https://lotusdental.al/public/images/dental-1.webp"
+      content="https://lotusdental.al/public/meta/og-image.webp"
     />
     <meta
       property="og:image:alt"
@@ -79,7 +81,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://lotusdental.al/public/images/dental-1.webp"
+      content="https://lotusdental.al/public/meta/og-image.webp"
     />
     <link rel="stylesheet" href="./dist/output.css" />
     <script type="application/ld+json">
@@ -89,8 +91,8 @@
         "@id": "https://lotusdental.al/#dentist",
         "name": "Lotus Clinic Dental",
         "url": "https://lotusdental.al/",
-        "image": "https://lotusdental.al/public/images/dental-1.webp",
-        "logo": "https://lotusdental.al/public/images/dental-1.webp",
+        "image": "https://lotusdental.al/public/meta/og-image.webp",
+        "logo": "https://lotusdental.al/public/meta/lotus-logo.webp",
         "description": "Lotus Clinic Dental provides modern general, cosmetic, implant, orthodontic, whitening, pediatric, root canal, and emergency dental care in Vlore, Albania.",
         "telephone": "+355698422428",
         "email": "info@luminadental.com",
@@ -173,35 +175,11 @@
           class="glass-nav mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-2xl px-3 py-3 ring-1 ring-white/60 sm:px-5 sm:py-4 lg:px-8"
         >
           <a href="#" class="group flex min-w-0 items-center gap-2 sm:gap-3">
-            <div
-              class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#075c6d] text-[#d9fbff] shadow-lg shadow-[#075c6d]/20 transition duration-300 group-hover:rotate-12 sm:h-11 sm:w-11"
-            >
-              <svg
-                class="h-5 w-5 sm:h-6 sm:w-6"
-                viewBox="0 0 48 48"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M24 8C18 13 15 18 15 24c0 6 4 10 9 13 5-3 9-7 9-13 0-6-3-11-9-16Z"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14 19C8 21 5 25 5 30c0 6 6 9 15 9-4-5-6-11-6-20Z"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M34 19c6 2 9 6 9 11 0 6-6 9-15 9 4-5 6-11 6-20Z"
-                  stroke="currentColor"
-                  stroke-width="3"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+            <img
+              src="/public/meta/lotus-logo.webp"
+              alt="Lotus Clinic Dental logo"
+              class="h-9 w-9 shrink-0 rounded-full object-cover shadow-lg shadow-[#075c6d]/20 transition duration-300 group-hover:rotate-12 sm:h-11 sm:w-11"
+            />
             <div>
               <p
                 class="text-lg font-semibold tracking-[0.22em] text-[#075c6d] sm:text-xl sm:tracking-[0.32em]"
@@ -664,7 +642,7 @@
             data-i18n-alt="alt.hero"
             decoding="async"
             fetchpriority="high"
-            class="h-136 w-full rounded-[2.5rem] object-cover object-center shadow-2xl shadow-[#075c6d]/20 ring-1 ring-white/80 transition duration-700 hover:scale-[1.012] md:h-168 lg:h-184 lg:w-[112%] lg:rounded-l-[3rem] lg:rounded-r-[5rem]"
+            class="mobile-hero-full-image h-136 w-full rounded-[2.5rem] object-cover object-center shadow-2xl shadow-[#075c6d]/20 ring-1 ring-white/80 transition duration-700 hover:scale-[1.012] md:h-168 lg:h-184 lg:w-[112%] lg:rounded-l-[3rem] lg:rounded-r-[5rem]"
           />
         </div>
       </section>
@@ -776,7 +754,7 @@
             src="/public/images/dental-2.avif"
             loading="lazy"
             decoding="async"
-            class="h-125 w-full rounded-4xl object-cover shadow-2xl shadow-[#0d2430]/10"
+            class="dental-2-image feature-full-image mobile-full-image h-125 w-full rounded-4xl object-cover shadow-2xl shadow-[#0d2430]/10 p-2"
             alt="Dental office"
             data-i18n-alt="alt.office"
           />
@@ -894,7 +872,7 @@
         </div>
 
         <div
-          class="reveal mt-14 overflow-hidden rounded-4xl border border-[#d8f4f8] bg-white/82 p-4 shadow-xl shadow-[#075c6d]/8 backdrop-blur md:p-5"
+          class="reveal mt-14 overflow-visible rounded-4xl border border-[#d8f4f8] bg-white/82 p-4 shadow-xl shadow-[#075c6d]/8 backdrop-blur md:p-5"
         >
           <div
             class="mb-4 flex flex-col justify-between gap-4 md:flex-row md:items-end"
@@ -992,7 +970,7 @@
                 src="/public/staff/staff-1.avif"
                 loading="lazy"
                 decoding="async"
-                class="h-110 w-full rounded-3xl object-cover object-center md:h-130"
+                class="feature-full-image mobile-full-image h-110 w-full object-cover object-center md:h-130 rounded-2xl"
                 alt="Doctor at Lotus Clinic Dental"
                 data-i18n-alt="alt.doctor"
               />
@@ -1033,10 +1011,10 @@
               class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
             >
               <img
-                src="/public/staff/staff-1.avif"
+                src="/public/staff/staff-2.avif"
                 loading="lazy"
                 decoding="async"
-                class="h-80 w-full object-cover object-center sm:h-96 lg:h-110"
+                class="mobile-full-image h-80 w-full object-cover object-center sm:h-96 lg:h-110"
                 alt="Lotus Clinic Dental team member"
                 data-i18n-alt="alt.staff"
               />
@@ -1045,29 +1023,7 @@
               class="mt-5 text-base leading-7 text-[#65757b]"
               data-i18n="doctor.cert1Text"
             >
-              Gentle care and clear treatment planning for every patient.
-            </p>
-          </article>
-          <article
-            class="staff-card rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] sm:p-6"
-          >
-            <div
-              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
-            >
-              <img
-                src="/public/staff/staff-2.avif"
-                loading="lazy"
-                decoding="async"
-                class="h-80 w-full object-cover object-center sm:h-96 lg:h-110"
-                alt="Lotus Clinic Dental team member"
-                data-i18n-alt="alt.staff"
-              />
-            </div>
-            <p
-              class="mt-5 text-base leading-7 text-[#65757b]"
-              data-i18n="doctor.cert2Text"
-            >
-              Friendly support that helps appointments feel simple and relaxed.
+              Anxhela Alimaj Kuçaj Mjeke Stomatologe Ceo
             </p>
           </article>
           <article
@@ -1080,17 +1036,16 @@
                 src="/public/staff/staff-3.avif"
                 loading="lazy"
                 decoding="async"
-                class="h-80 w-full object-cover object-center sm:h-96 lg:h-110"
+                class="mobile-full-image h-80 w-full object-cover object-center sm:h-96 lg:h-110"
                 alt="Lotus Clinic Dental team member"
                 data-i18n-alt="alt.staff"
               />
             </div>
             <p
               class="mt-5 text-base leading-7 text-[#65757b]"
-              data-i18n="doctor.cert3Text"
+              data-i18n="doctor.cert2Text"
             >
-              Careful preparation of treatment rooms with patient safety in
-              mind.
+              Mjeke Stomatologe
             </p>
           </article>
           <article
@@ -1103,7 +1058,29 @@
                 src="/public/staff/staff-4.avif"
                 loading="lazy"
                 decoding="async"
-                class="h-80 w-full object-cover object-center sm:h-96 lg:h-110"
+                class="mobile-full-image h-80 w-full object-cover object-center sm:h-96 lg:h-110"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
+              />
+            </div>
+            <p
+              class="mt-5 text-base leading-7 text-[#65757b]"
+              data-i18n="doctor.cert3Text"
+            >
+              Infermiere
+            </p>
+          </article>
+          <article
+            class="staff-card rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] sm:p-6"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/staff/staff-5.avif"
+                loading="lazy"
+                decoding="async"
+                class="mobile-full-image h-80 w-full object-cover object-center sm:h-96 lg:h-110"
                 alt="Lotus Clinic Dental team member"
                 data-i18n-alt="alt.staff"
               />
@@ -1112,7 +1089,7 @@
               class="mt-5 text-base leading-7 text-[#65757b]"
               data-i18n="doctor.cert4Text"
             >
-              Detail-focused assistance for clean, organized, comfortable care.
+              Olta Qahi mjeke Ortodonte
             </p>
           </article>
         </div>
