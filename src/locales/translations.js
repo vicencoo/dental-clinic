@@ -61,21 +61,31 @@ window.LOTUS_TRANSLATIONS = {
     "about.patientFlowTitle": "E lehtë nga fillimi në fund",
     "about.patientFlowText":
       "Ne shpjegojmë çdo hap qartë, që pacientët të dinë çfarë të presin para, gjatë dhe pas trajtimit.",
-    "doctor.eyebrow": "Njihuni me doktoreshën",
-    "doctor.title": "Dr. Anxhela, e fokusuar në dentistri të saktë dhe të butë",
+    "about.galleryEyebrow": "Brenda klinikës",
+    "about.galleryTitle": "Një pamje e shpejtë e ambientit tonë",
+    "about.galleryPrev": "Fotoja e mëparshme e klinikës",
+    "about.galleryNext": "Fotoja tjetër e klinikës",
+    "about.galleryLabel": "Galeria e ambientit të klinikës",
+    "doctor.eyebrow": "Njihuni me ekipin tonë",
+    "doctor.title":
+      "Një ekip i kujdesshëm, i fokusuar në dentistri të saktë dhe të butë",
     "doctor.text":
-      "Doktoresha kombinon diagnozën e kujdesshme, komunikimin e qartë dhe planifikimin modern të trajtimit për ta bërë çdo pacient të ndihet i informuar dhe komod.",
+      "Stafi ynë punon së bashku që çdo vizitë të jetë e qartë, e qetë dhe komode nga recepsioni deri te trajtimi.",
     "doctor.text2":
-      "Certifikimet dhe trajnimet e vazhdueshme tregojnë përkushtimin e klinikës ndaj teknikave të sigurta, detajeve estetike dhe rezultateve afatgjata.",
+      "Çdo pjesëtar i ekipit mbështet një përvojë të lehtë për pacientin me komunikim të kujdesshëm, higjienë dhe vëmendje ndaj detajeve.",
     "doctor.cert1Title": "Dentistri estetike",
     "doctor.cert1Text":
-      "Trajnim i fokusuar në dizajn natyral të buzëqeshjes dhe detaje.",
+      "Kujdes i butë dhe planifikim i qartë trajtimi për çdo pacient.",
     "doctor.cert2Title": "Kujdes endodontik",
     "doctor.cert2Text":
-      "Edukime të vazhdueshme në trajtime që ruajnë dhëmbët natyralë.",
+      "Mbështetje miqësore që i bën takimet të ndihen të thjeshta dhe të qeta.",
     "doctor.cert3Title": "Siguria e pacientit",
     "doctor.cert3Text":
-      "Certifikim që mbështet kujdes të sigurt dhe të qëndrueshëm.",
+      "Përgatitje e kujdesshme e dhomave të trajtimit me sigurinë e pacientit në fokus.",
+    "doctor.cert4Text":
+      "Asistencë e fokusuar te detajet për kujdes të pastër, të organizuar dhe komod.",
+    "doctor.cert5Text":
+      "Komunikim i ngrohtë nga mirëseardhja e parë deri te kontrolli pas trajtimit.",
     "services.eyebrow": "Shërbimet tona",
     "services.title": "Kujdes dentar i plotë",
     "services.availability": "Rezervo një konsultë",
@@ -131,6 +141,7 @@ window.LOTUS_TRANSLATIONS = {
     "alt.room": "Karrige dentare dhe sallë klinike e ndriçuar",
     "alt.patient": "Dentist duke trajtuar nje pacient",
     "alt.doctor": "Doktoresha në Lotus Clinic Dental",
+    "alt.staff": "Pjesëtar i ekipit të Lotus Clinic Dental",
     "alt.certification": "Foto provizore e certifikimit dentar",
     videos: [
       [
@@ -205,18 +216,30 @@ window.LOTUS_TRANSLATIONS = {
     "about.patientFlowTitle": "Easy from start to finish",
     "about.patientFlowText":
       "We explain each step clearly, so patients know what to expect before, during, and after treatment.",
-    "doctor.eyebrow": "Meet The Doctor",
-    "doctor.title": "Dr. Anxhela, focused on precise and gentle dentistry",
+    "about.galleryEyebrow": "Inside The Clinic",
+    "about.galleryTitle": "A quick look at our environment",
+    "about.galleryPrev": "Previous clinic photo",
+    "about.galleryNext": "Next clinic photo",
+    "about.galleryLabel": "Clinic environment gallery",
+    "doctor.eyebrow": "Meet Our Team",
+    "doctor.title": "A caring team focused on precise and gentle dentistry",
     "doctor.text":
-      "The doctor combines careful diagnosis, clear communication, and modern treatment planning to help each patient feel informed and comfortable.",
+      "Our staff works together to make each visit clear, calm, and comfortable from reception to treatment.",
     "doctor.text2":
-      "Certifications and continued training reflect the clinic's commitment to safe techniques, aesthetic detail, and reliable long-term results.",
+      "Every member of the team supports a smooth patient experience with careful communication, hygiene, and attention to detail.",
     "doctor.cert1Title": "Aesthetic Dentistry",
-    "doctor.cert1Text": "Training focused on natural smile design and detail.",
+    "doctor.cert1Text":
+      "Gentle care and clear treatment planning for every patient.",
     "doctor.cert2Title": "Endodontic Care",
-    "doctor.cert2Text": "Continued education in tooth-preserving treatments.",
+    "doctor.cert2Text":
+      "Friendly support that helps appointments feel simple and relaxed.",
     "doctor.cert3Title": "Patient Safety",
-    "doctor.cert3Text": "Certification supporting safe and consistent care.",
+    "doctor.cert3Text":
+      "Careful preparation of treatment rooms with patient safety in mind.",
+    "doctor.cert4Text":
+      "Detail-focused assistance for clean, organized, comfortable care.",
+    "doctor.cert5Text":
+      "Warm communication from the first welcome to the final follow-up.",
     "services.eyebrow": "Our Services",
     "services.title": "Comprehensive Dental Care",
     "services.availability": "Book a Consultation",
@@ -271,6 +294,7 @@ window.LOTUS_TRANSLATIONS = {
     "alt.room": "Bright dental chair and clinic room",
     "alt.patient": "Dentist treating a patient",
     "alt.doctor": "Doctor at Lotus Clinic Dental",
+    "alt.staff": "Lotus Clinic Dental team member",
     "alt.certification": "Dental certification placeholder",
     reviews: [
       {
@@ -373,21 +397,31 @@ window.LOTUS_TRANSLATIONS = {
     "about.patientFlowTitle": "Semplice dall'inizio alla fine",
     "about.patientFlowText":
       "Spieghiamo ogni passaggio con chiarezza, cosi i pazienti sanno cosa aspettarsi prima, durante e dopo il trattamento.",
-    "doctor.eyebrow": "Conosci la dottoressa",
+    "about.galleryEyebrow": "Dentro la clinica",
+    "about.galleryTitle": "Uno sguardo rapido al nostro ambiente",
+    "about.galleryPrev": "Foto precedente della clinica",
+    "about.galleryNext": "Foto successiva della clinica",
+    "about.galleryLabel": "Galleria dell'ambiente della clinica",
+    "doctor.eyebrow": "Conosci il nostro team",
     "doctor.title":
-      "Dr. Anxhela, concentrata su odontoiatria precisa e delicata",
+      "Un team attento, concentrato su odontoiatria precisa e delicata",
     "doctor.text":
-      "La dottoressa combina diagnosi accurata, comunicazione chiara e pianificazione moderna per aiutare ogni paziente a sentirsi informato e a proprio agio.",
+      "Il nostro staff lavora insieme per rendere ogni visita chiara, tranquilla e confortevole dalla reception al trattamento.",
     "doctor.text2":
-      "Certificazioni e formazione continua riflettono l'impegno della clinica verso tecniche sicure, dettaglio estetico e risultati affidabili nel tempo.",
+      "Ogni membro del team supporta un'esperienza fluida per il paziente con comunicazione attenta, igiene e cura dei dettagli.",
     "doctor.cert1Title": "Odontoiatria estetica",
     "doctor.cert1Text":
-      "Formazione focalizzata su design naturale del sorriso e dettaglio.",
+      "Cura delicata e pianificazione chiara del trattamento per ogni paziente.",
     "doctor.cert2Title": "Cure endodontiche",
     "doctor.cert2Text":
-      "Aggiornamento continuo nei trattamenti che preservano i denti.",
+      "Supporto cordiale che rende gli appuntamenti semplici e rilassati.",
     "doctor.cert3Title": "Sicurezza del paziente",
-    "doctor.cert3Text": "Certificazione a supporto di cure sicure e costanti.",
+    "doctor.cert3Text":
+      "Preparazione accurata delle sale trattamento con la sicurezza del paziente al centro.",
+    "doctor.cert4Text":
+      "Assistenza attenta ai dettagli per cure pulite, organizzate e confortevoli.",
+    "doctor.cert5Text":
+      "Comunicazione calorosa dal primo benvenuto al controllo finale.",
     "services.eyebrow": "I nostri servizi",
     "services.title": "Cure dentali complete",
     "services.availability": "Prenota una consulenza",
@@ -443,6 +477,7 @@ window.LOTUS_TRANSLATIONS = {
     "alt.room": "Poltrona dentale luminosa e sala clinica",
     "alt.patient": "Dentista che cura un paziente",
     "alt.doctor": "Dottoressa alla Lotus Clinic Dental",
+    "alt.staff": "Membro del team Lotus Clinic Dental",
     "alt.certification": "Foto provvisoria di certificazione dentale",
     videos: [
       [
@@ -521,21 +556,31 @@ window.LOTUS_TRANSLATIONS.es = {
   "about.patientFlowTitle": "Facil de principio a fin",
   "about.patientFlowText":
     "Explicamos cada paso con claridad para que los pacientes sepan que esperar antes, durante y despues del tratamiento.",
-  "doctor.eyebrow": "Conoce a la doctora",
-  "doctor.title": "Dra. Anxhela, enfocada en odontologia precisa y delicada",
+  "about.galleryEyebrow": "Dentro de la clinica",
+  "about.galleryTitle": "Una mirada rapida a nuestro ambiente",
+  "about.galleryPrev": "Foto anterior de la clinica",
+  "about.galleryNext": "Siguiente foto de la clinica",
+  "about.galleryLabel": "Galeria del ambiente de la clinica",
+  "doctor.eyebrow": "Conoce a nuestro equipo",
+  "doctor.title":
+    "Un equipo atento enfocado en odontologia precisa y delicada",
   "doctor.text":
-    "La doctora combina diagnostico cuidadoso, comunicacion clara y planificacion moderna para que cada paciente se sienta informado y comodo.",
+    "Nuestro personal trabaja unido para que cada visita sea clara, tranquila y comoda desde la recepcion hasta el tratamiento.",
   "doctor.text2":
-    "Las certificaciones y la formacion continua reflejan el compromiso de la clinica con tecnicas seguras, detalle estetico y resultados fiables a largo plazo.",
+    "Cada miembro del equipo apoya una experiencia fluida para el paciente con comunicacion cuidadosa, higiene y atencion al detalle.",
   "doctor.cert1Title": "Odontologia estetica",
   "doctor.cert1Text":
-    "Formacion enfocada en diseno natural de sonrisa y detalle.",
+    "Atencion delicada y planificacion clara del tratamiento para cada paciente.",
   "doctor.cert2Title": "Cuidado endodontico",
   "doctor.cert2Text":
-    "Educacion continua en tratamientos que conservan los dientes.",
+    "Apoyo amable que ayuda a que las citas se sientan simples y relajadas.",
   "doctor.cert3Title": "Seguridad del paciente",
   "doctor.cert3Text":
-    "Certificacion que respalda una atencion segura y constante.",
+    "Preparacion cuidadosa de las salas de tratamiento con la seguridad del paciente en mente.",
+  "doctor.cert4Text":
+    "Asistencia enfocada en los detalles para una atencion limpia, organizada y comoda.",
+  "doctor.cert5Text":
+    "Comunicacion calida desde la primera bienvenida hasta el seguimiento final.",
   "services.eyebrow": "Nuestros servicios",
   "services.title": "Atencion dental integral",
   "services.availability": "Reservar una consulta",
@@ -590,6 +635,7 @@ window.LOTUS_TRANSLATIONS.es = {
   "alt.room": "Sillon dental luminoso y sala clinica",
   "alt.patient": "Dentista tratando a un paciente",
   "alt.doctor": "Doctora en Lotus Clinic Dental",
+  "alt.staff": "Miembro del equipo de Lotus Clinic Dental",
   "alt.certification": "Foto provisional de certificacion dental",
   videos: [
     [
@@ -670,20 +716,31 @@ window.LOTUS_TRANSLATIONS.de = {
   "about.patientFlowTitle": "Einfach von Anfang bis Ende",
   "about.patientFlowText":
     "Wir erklaeren jeden Schritt klar, damit Patienten vor, waehrend und nach der Behandlung wissen, was sie erwartet.",
-  "doctor.eyebrow": "Lernen Sie die Aerztin kennen",
-  "doctor.title": "Dr. Anxhela, fokussiert auf praezise und sanfte Zahnmedizin",
+  "about.galleryEyebrow": "In der Klinik",
+  "about.galleryTitle": "Ein kurzer Blick auf unsere Umgebung",
+  "about.galleryPrev": "Vorheriges Klinikfoto",
+  "about.galleryNext": "Naechstes Klinikfoto",
+  "about.galleryLabel": "Galerie der Klinikumgebung",
+  "doctor.eyebrow": "Lernen Sie unser Team kennen",
+  "doctor.title":
+    "Ein aufmerksames Team fuer praezise und sanfte Zahnmedizin",
   "doctor.text":
-    "Die Aerztin verbindet sorgfaeltige Diagnose, klare Kommunikation und moderne Behandlungsplanung, damit sich jeder Patient informiert und wohl fuehlt.",
+    "Unser Team arbeitet zusammen, damit jeder Besuch von der Rezeption bis zur Behandlung klar, ruhig und angenehm ist.",
   "doctor.text2":
-    "Zertifikate und kontinuierliche Fortbildung zeigen das Engagement der Klinik fuer sichere Techniken, aesthetische Details und verlaessliche Langzeitergebnisse.",
+    "Jedes Teammitglied unterstuetzt eine reibungslose Patientenerfahrung mit sorgfaeltiger Kommunikation, Hygiene und Liebe zum Detail.",
   "doctor.cert1Title": "Aesthetische Zahnmedizin",
   "doctor.cert1Text":
-    "Fortbildung mit Fokus auf natuerliches Smile Design und Details.",
+    "Sanfte Betreuung und klare Behandlungsplanung fuer jeden Patienten.",
   "doctor.cert2Title": "Endodontische Versorgung",
   "doctor.cert2Text":
-    "Kontinuierliche Weiterbildung in zahnerhaltenden Behandlungen.",
+    "Freundliche Unterstuetzung, damit Termine einfach und entspannt wirken.",
   "doctor.cert3Title": "Patientensicherheit",
-  "doctor.cert3Text": "Zertifizierung fuer sichere und konstante Versorgung.",
+  "doctor.cert3Text":
+    "Sorgfaeltige Vorbereitung der Behandlungsraeume mit Patientensicherheit im Blick.",
+  "doctor.cert4Text":
+    "Detailorientierte Assistenz fuer saubere, organisierte und angenehme Betreuung.",
+  "doctor.cert5Text":
+    "Warme Kommunikation vom ersten Empfang bis zur letzten Nachkontrolle.",
   "services.eyebrow": "Unsere Leistungen",
   "services.title": "Umfassende Zahnversorgung",
   "services.availability": "Beratung buchen",
@@ -738,6 +795,7 @@ window.LOTUS_TRANSLATIONS.de = {
   "alt.room": "Heller Behandlungsstuhl und Klinikraum",
   "alt.patient": "Zahnarzt behandelt einen Patienten",
   "alt.doctor": "Aerztin bei Lotus Clinic Dental",
+  "alt.staff": "Teammitglied von Lotus Clinic Dental",
   "alt.certification": "Platzhalterfoto fuer zahnmedizinisches Zertifikat",
   videos: [
     [
@@ -818,20 +876,31 @@ window.LOTUS_TRANSLATIONS.fr = {
   "about.patientFlowTitle": "Simple du debut a la fin",
   "about.patientFlowText":
     "Nous expliquons chaque etape clairement afin que les patients sachent a quoi s'attendre avant, pendant et apres le traitement.",
-  "doctor.eyebrow": "Rencontrez la docteure",
-  "doctor.title": "Dr. Anxhela, orientee vers une dentisterie precise et douce",
+  "about.galleryEyebrow": "Dans la clinique",
+  "about.galleryTitle": "Un apercu rapide de notre environnement",
+  "about.galleryPrev": "Photo precedente de la clinique",
+  "about.galleryNext": "Photo suivante de la clinique",
+  "about.galleryLabel": "Galerie de l'environnement de la clinique",
+  "doctor.eyebrow": "Rencontrez notre equipe",
+  "doctor.title":
+    "Une equipe attentive orientee vers une dentisterie precise et douce",
   "doctor.text":
-    "La docteure associe un diagnostic attentif, une communication claire et une planification moderne des traitements pour aider chaque patient a se sentir informe et a l'aise.",
+    "Notre personnel travaille ensemble pour rendre chaque visite claire, calme et confortable, de l'accueil au traitement.",
   "doctor.text2":
-    "Les certifications et la formation continue refletent l'engagement de la clinique envers des techniques sures, le detail esthetique et des resultats fiables a long terme.",
+    "Chaque membre de l'equipe soutient une experience fluide avec une communication attentive, l'hygiene et le souci du detail.",
   "doctor.cert1Title": "Dentisterie esthetique",
   "doctor.cert1Text":
-    "Formation axee sur la conception naturelle du sourire et le detail.",
+    "Soins doux et planification claire du traitement pour chaque patient.",
   "doctor.cert2Title": "Soins endodontiques",
   "doctor.cert2Text":
-    "Formation continue dans les traitements qui preservent les dents.",
+    "Soutien amical pour rendre les rendez-vous simples et detendus.",
   "doctor.cert3Title": "Securite du patient",
-  "doctor.cert3Text": "Certification soutenant des soins surs et constants.",
+  "doctor.cert3Text":
+    "Preparation soigneuse des salles de traitement avec la securite du patient en tete.",
+  "doctor.cert4Text":
+    "Assistance axee sur les details pour des soins propres, organises et confortables.",
+  "doctor.cert5Text":
+    "Communication chaleureuse du premier accueil au suivi final.",
   "services.eyebrow": "Nos services",
   "services.title": "Soins dentaires complets",
   "services.availability": "Reserver une consultation",
@@ -887,6 +956,7 @@ window.LOTUS_TRANSLATIONS.fr = {
   "alt.room": "Fauteuil dentaire lumineux et salle clinique",
   "alt.patient": "Dentiste traitant un patient",
   "alt.doctor": "Docteure chez Lotus Clinic Dental",
+  "alt.staff": "Membre de l'equipe Lotus Clinic Dental",
   "alt.certification": "Image provisoire de certification dentaire",
   videos: [
     [

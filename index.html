@@ -894,6 +894,88 @@
         </div>
 
         <div
+          class="reveal mt-14 overflow-hidden rounded-4xl border border-[#d8f4f8] bg-white/82 p-4 shadow-xl shadow-[#075c6d]/8 backdrop-blur md:p-5"
+        >
+          <div
+            class="mb-4 flex flex-col justify-between gap-4 md:flex-row md:items-end"
+          >
+            <div>
+              <p
+                class="text-xs font-bold uppercase tracking-[0.22em] text-[#0c8da3]"
+                data-i18n="about.galleryEyebrow"
+              >
+                Inside The Clinic
+              </p>
+              <h3
+                class="mt-3 font-serif text-2xl md:text-3xl"
+                data-i18n="about.galleryTitle"
+              >
+                A quick look at our environment
+              </h3>
+            </div>
+            <div class="flex gap-2">
+              <button
+                type="button"
+                class="about-gallery-button grid h-10 w-10 place-items-center rounded-full border border-[#d8f4f8] bg-[#f7feff] text-xl text-[#075c6d] transition hover:-translate-y-0.5 hover:bg-[#eefcfd]"
+                data-about-gallery-prev
+                aria-label="Previous clinic photo"
+                data-i18n-aria-label="about.galleryPrev"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                class="about-gallery-button grid h-10 w-10 place-items-center rounded-full border border-[#d8f4f8] bg-[#f7feff] text-xl text-[#075c6d] transition hover:-translate-y-0.5 hover:bg-[#eefcfd]"
+                data-about-gallery-next
+                aria-label="Next clinic photo"
+                data-i18n-aria-label="about.galleryNext"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+          <div
+            class="about-gallery-track flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-1"
+            id="aboutGalleryTrack"
+            aria-label="Clinic environment gallery"
+            data-i18n-aria-label="about.galleryLabel"
+          >
+            <img
+              src="/public/gallery/image-2.jpeg"
+              loading="lazy"
+              decoding="async"
+              class="about-gallery-image h-56 min-w-[82%] snap-start rounded-3xl object-cover sm:min-w-[48%] lg:min-w-[31%]"
+              alt="Bright dental chair and clinic room"
+              data-i18n-alt="alt.room"
+            />
+            <img
+              src="/public/gallery/image-5.jpeg"
+              loading="lazy"
+              decoding="async"
+              class="about-gallery-image h-56 min-w-[82%] snap-start rounded-3xl object-cover sm:min-w-[48%] lg:min-w-[31%]"
+              alt="Bright dental chair and clinic room"
+              data-i18n-alt="alt.room"
+            />
+            <img
+              src="/public/gallery/image-8.jpeg"
+              loading="lazy"
+              decoding="async"
+              class="about-gallery-image h-56 min-w-[82%] snap-start rounded-3xl object-cover sm:min-w-[48%] lg:min-w-[31%]"
+              alt="Dental clinic environment"
+              data-i18n-alt="alt.room"
+            />
+            <img
+              src="/public/gallery/image-9.jpeg"
+              loading="lazy"
+              decoding="async"
+              class="about-gallery-image h-56 min-w-[82%] snap-start rounded-3xl object-cover sm:min-w-[48%] lg:min-w-[31%]"
+              alt="Dental clinic environment"
+              data-i18n-alt="alt.room"
+            />
+          </div>
+        </div>
+
+        <div
           class="mt-20 grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center"
         >
           <div class="flex flex-col lg:gap-0 gap-7">
@@ -901,7 +983,7 @@
               class="lg:hidden text-xs font-bold uppercase tracking-[0.25em] text-[#b78148]"
               data-i18n="doctor.eyebrow"
             >
-              Meet The Doctor
+              Meet Our Team
             </p>
             <div
               class="reveal overflow-hidden rounded-4xl bg-white p-3 shadow-2xl shadow-[#075c6d]/12 ring-1 ring-[#d8f4f8]"
@@ -922,30 +1004,50 @@
               class="lg:flex hidden text-xs font-bold uppercase tracking-[0.25em] text-[#b78148]"
               data-i18n="doctor.eyebrow"
             >
-              Meet The Doctor
+              Meet Our Team
             </p>
             <h2
               class="mt-4 font-serif text-4xl leading-tight md:text-5xl"
               data-i18n="doctor.title"
             >
-              Dr. Anxhela, focused on precise and gentle dentistry
+              A caring team focused on precise and gentle dentistry
             </h2>
             <p class="mt-6 leading-8 text-[#5d6f76]" data-i18n="doctor.text">
-              The doctor combines careful diagnosis, clear communication, and
-              modern treatment planning to help each patient feel informed and
-              comfortable.
+              Our staff works together to make each visit clear, calm, and
+              comfortable from reception to treatment.
             </p>
             <p class="mt-4 leading-8 text-[#5d6f76]" data-i18n="doctor.text2">
-              Certifications and continued training reflect the clinic's
-              commitment to safe techniques, aesthetic detail, and reliable
-              long-term results.
+              Every member of the team supports a smooth patient experience
+              with careful communication, hygiene, and attention to detail.
             </p>
           </div>
         </div>
 
-        <div class="reveal mt-12 grid gap-6 md:grid-cols-3">
+        <div class="reveal staff-grid mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
           <article
-            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
+            class="staff-card rounded-3xl bg-white p-4 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] lg:col-span-2"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-7.jpg"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover object-center sm:h-80 lg:h-72"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
+              />
+            </div>
+            <p
+              class="mt-4 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert1Text"
+            >
+              Gentle care and clear treatment planning for every patient.
+            </p>
+          </article>
+          <article
+            class="staff-card rounded-3xl bg-white p-4 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] lg:col-span-2"
           >
             <div
               class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
@@ -954,48 +1056,20 @@
                 src="/public/images/dental-6.webp"
                 loading="lazy"
                 decoding="async"
-                class="h-72 w-full object-cover md:h-80"
-                alt="Dental certification placeholder"
-                data-i18n-alt="alt.certification"
+                class="h-72 w-full object-cover object-center sm:h-80 lg:h-72"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
               />
             </div>
-            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert1Title">
-              Aesthetic Dentistry
-            </h3>
             <p
-              class="mt-2 text-sm leading-6 text-[#65757b]"
-              data-i18n="doctor.cert1Text"
-            >
-              Training focused on natural smile design and detail.
-            </p>
-          </article>
-          <article
-            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
-          >
-            <div
-              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
-            >
-              <img
-                src="/public/images/dental-1.webp"
-                loading="lazy"
-                decoding="async"
-                class="h-72 w-full object-cover md:h-80"
-                alt="Dental certification placeholder"
-                data-i18n-alt="alt.certification"
-              />
-            </div>
-            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert2Title">
-              Endodontic Care
-            </h3>
-            <p
-              class="mt-2 text-sm leading-6 text-[#65757b]"
+              class="mt-4 text-sm leading-6 text-[#65757b]"
               data-i18n="doctor.cert2Text"
             >
-              Continued education in tooth-preserving treatments.
+              Friendly support that helps appointments feel simple and relaxed.
             </p>
           </article>
           <article
-            class="rounded-3xl bg-white p-5 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8]"
+            class="staff-card rounded-3xl bg-white p-4 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] lg:col-span-2"
           >
             <div
               class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
@@ -1004,19 +1078,60 @@
                 src="/public/images/dental-12.webp"
                 loading="lazy"
                 decoding="async"
-                class="h-72 w-full object-cover md:h-80"
-                alt="Dental certification placeholder"
-                data-i18n-alt="alt.certification"
+                class="h-72 w-full object-cover object-center sm:h-80 lg:h-72"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
               />
             </div>
-            <h3 class="mt-5 font-serif text-xl" data-i18n="doctor.cert3Title">
-              Patient Safety
-            </h3>
             <p
-              class="mt-2 text-sm leading-6 text-[#65757b]"
+              class="mt-4 text-sm leading-6 text-[#65757b]"
               data-i18n="doctor.cert3Text"
             >
-              Certification supporting safe and consistent care.
+              Careful preparation of treatment rooms with patient safety in mind.
+            </p>
+          </article>
+          <article
+            class="staff-card rounded-3xl bg-white p-4 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] lg:col-span-2 lg:col-start-2"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-1.webp"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover object-center sm:h-80 lg:h-72"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
+              />
+            </div>
+            <p
+              class="mt-4 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert4Text"
+            >
+              Detail-focused assistance for clean, organized, comfortable care.
+            </p>
+          </article>
+          <article
+            class="staff-card rounded-3xl bg-white p-4 shadow-xl shadow-[#075c6d]/8 ring-1 ring-[#d8f4f8] lg:col-span-2"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-[#d8f4f8] bg-white"
+            >
+              <img
+                src="/public/images/dental-8.webp"
+                loading="lazy"
+                decoding="async"
+                class="h-72 w-full object-cover object-center sm:h-80 lg:h-72"
+                alt="Lotus Clinic Dental team member"
+                data-i18n-alt="alt.staff"
+              />
+            </div>
+            <p
+              class="mt-4 text-sm leading-6 text-[#65757b]"
+              data-i18n="doctor.cert5Text"
+            >
+              Warm communication from the first welcome to the final follow-up.
             </p>
           </article>
         </div>

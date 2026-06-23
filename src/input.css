@@ -301,6 +301,58 @@ button {
   animation-duration: 0.58s;
 }
 
+.about-gallery-track {
+  cursor: grab;
+  scrollbar-width: none;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.about-gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.about-gallery-track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.about-gallery-track.is-dragging .about-gallery-image {
+  pointer-events: none;
+}
+
+.about-gallery-image,
+.staff-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+  will-change: transform;
+}
+
+.staff-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-card p {
+  min-height: 3rem;
+}
+
+.about-gallery-image:hover,
+.staff-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 55px rgba(7, 92, 109, 0.14);
+}
+
+.staff-card img {
+  transition: transform 0.45s ease;
+}
+
+.staff-card:hover img {
+  transform: scale(1.04);
+}
+
 @keyframes float-soft {
   0%,
   100% {
@@ -410,5 +462,15 @@ button {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  .about-gallery-track {
+    scroll-behavior: auto;
+  }
+
+  .about-gallery-image,
+  .staff-card,
+  .staff-card img {
+    transition: none;
   }
 }

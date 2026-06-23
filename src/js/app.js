@@ -37,6 +37,9 @@ const navSections = document.querySelectorAll(
 );
 const backToTopButton = document.getElementById("backToTopButton");
 const whatsappButton = document.getElementById("whatsappButton");
+const aboutGalleryTrack = document.getElementById("aboutGalleryTrack");
+const aboutGalleryPrev = document.querySelector("[data-about-gallery-prev]");
+const aboutGalleryNext = document.querySelector("[data-about-gallery-next]");
 
 const videoModal = document.getElementById("videoModal");
 const modalVideo = document.getElementById("modalVideo");
@@ -282,6 +285,55 @@ const startCounters = () => {
   });
 };
 
+const scrollAboutGallery = (direction) => {
+  if (!aboutGalleryTrack) return;
+
+  const firstImage = aboutGalleryTrack.querySelector("img");
+  const scrollAmount =
+    firstImage?.getBoundingClientRect().width || aboutGalleryTrack.clientWidth;
+
+  aboutGalleryTrack.scrollBy({
+    left: direction * (scrollAmount + 16),
+    behavior: "smooth",
+  });
+};
+
+const enableAboutGalleryDrag = () => {
+  if (!aboutGalleryTrack) return;
+
+  let isDragging = false;
+  let startX = 0;
+  let startScrollLeft = 0;
+
+  const stopDragging = () => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    aboutGalleryTrack.classList.remove("is-dragging");
+  };
+
+  aboutGalleryTrack.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) return;
+
+    isDragging = true;
+    startX = event.clientX;
+    startScrollLeft = aboutGalleryTrack.scrollLeft;
+    aboutGalleryTrack.classList.add("is-dragging");
+    aboutGalleryTrack.setPointerCapture(event.pointerId);
+  });
+
+  aboutGalleryTrack.addEventListener("pointermove", (event) => {
+    if (!isDragging) return;
+
+    event.preventDefault();
+    aboutGalleryTrack.scrollLeft = startScrollLeft - (event.clientX - startX);
+  });
+
+  aboutGalleryTrack.addEventListener("pointerup", stopDragging);
+  aboutGalleryTrack.addEventListener("pointercancel", stopDragging);
+  aboutGalleryTrack.addEventListener("lostpointercapture", stopDragging);
+};
+
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -389,6 +441,10 @@ navLinks.forEach((link) => {
     updateActiveNav(link.dataset.navSection);
   });
 });
+
+aboutGalleryPrev?.addEventListener("click", () => scrollAboutGallery(-1));
+aboutGalleryNext?.addEventListener("click", () => scrollAboutGallery(1));
+enableAboutGalleryDrag();
 
 let activeNavFrame;
 
