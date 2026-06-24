@@ -79,7 +79,7 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Stomatologe",
     "doctor.cert3Title": "Siguria e pacientit",
     "doctor.cert3Text": "Edona Senaj Infermiere",
-    "doctor.cert4Text": "Dr. Olta Qahi",
+    "doctor.cert4Text": "Dr. Olta Qahi Ortodonte",
     "doctor.cert5Text":
       "Komunikim i ngrohtë nga mirëseardhja e parë deri te kontrolli pas trajtimit.",
     "services.eyebrow": "Shërbimet tona",
@@ -253,7 +253,7 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Dentist",
     "doctor.cert3Title": "Patient Safety",
     "doctor.cert3Text": "Edona Senaj Nurse",
-    "doctor.cert4Text": "Dr. Olta Qahi",
+    "doctor.cert4Text": "Dr. Olta Qahi Orthodontist",
     "doctor.cert5Text":
       "Warm communication from the first welcome to the final follow-up.",
     "services.eyebrow": "Our Services",
@@ -455,7 +455,7 @@ window.LOTUS_TRANSLATIONS = {
     "doctor.cert2Text": "Dr. Orjeta Gjonaj Medico dentista",
     "doctor.cert3Title": "Sicurezza del paziente",
     "doctor.cert3Text": "Edona Senaj Infermiera",
-    "doctor.cert4Text": "Dr. Olta Qahi",
+    "doctor.cert4Text": "Dr. Olta Qahi Ortodonzista",
     "doctor.cert5Text":
       "Comunicazione calorosa dal primo benvenuto al controllo finale.",
     "services.eyebrow": "I nostri servizi",
@@ -634,7 +634,7 @@ window.LOTUS_TRANSLATIONS.es = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Odontologa",
   "doctor.cert3Title": "Seguridad del paciente",
   "doctor.cert3Text": "Edona Senaj Enfermera",
-  "doctor.cert4Text": "Dr. Olta Qahi",
+  "doctor.cert4Text": "Dr. Olta Qahi Ortodoncista",
   "doctor.cert5Text":
     "Comunicacion calida desde la primera bienvenida hasta el seguimiento final.",
   "services.eyebrow": "Nuestros servicios",
@@ -814,7 +814,7 @@ window.LOTUS_TRANSLATIONS.de = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Zahnaerztin",
   "doctor.cert3Title": "Patientensicherheit",
   "doctor.cert3Text": "Edona Senaj Krankenschwester",
-  "doctor.cert4Text": "Dr. Olta Qahi",
+  "doctor.cert4Text": "Dr. Olta Qahi Kieferorthopaedin",
   "doctor.cert5Text":
     "Warme Kommunikation vom ersten Empfang bis zur letzten Nachkontrolle.",
   "services.eyebrow": "Unsere Leistungen",
@@ -994,7 +994,7 @@ window.LOTUS_TRANSLATIONS.fr = {
   "doctor.cert2Text": "Dr. Orjeta Gjonaj Dentiste",
   "doctor.cert3Title": "Securite du patient",
   "doctor.cert3Text": "Edona Senaj Infirmiere",
-  "doctor.cert4Text": "Dr. Olta Qahi",
+  "doctor.cert4Text": "Dr. Olta Qahi Orthodontiste",
   "doctor.cert5Text":
     "Communication chaleureuse du premier accueil au suivi final.",
   "services.eyebrow": "Nos services",
