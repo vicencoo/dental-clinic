@@ -75,7 +75,7 @@ const languageLocales = {
   de: "de_DE",
 };
 
-const siteUrl = "https://lotusdentalclinic.al/";
+const siteUrl = "https://www.lotusdentalclinic.al/";
 
 const translate = (key) =>
   translations[currentLanguage]?.[key] || translations.en[key] || key;
