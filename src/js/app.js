@@ -4,7 +4,6 @@ import { renderImages } from "./gallery.js";
 import { renderReviews, setReviewsData } from "./reviews.js";
 import { servicesJs } from "./services.js";
 import { renderVideos } from "./videos.js";
-import { inject } from "@vercel/analytics";
 
 const translations = window.LOTUS_TRANSLATIONS || {};
 const urlLanguage = new URLSearchParams(window.location.search).get("lang");
@@ -586,6 +585,5 @@ renderImages();
 aboutGallery();
 servicesJs();
 // renderVideos();
-inject();
 
 applyLanguage(currentLanguage);
