@@ -1,9 +1,13 @@
+import { inject } from "@vercel/analytics";
 import { videoAssets } from "../constants/videoAssets.js";
 import { aboutGallery } from "./aboutGallery.js";
 import { renderImages } from "./gallery.js";
 import { renderReviews, setReviewsData } from "./reviews.js";
 import { servicesJs } from "./services.js";
 import { renderVideos } from "./videos.js";
+
+// Initialize Vercel Web Analytics
+inject();
 
 const translations = window.LOTUS_TRANSLATIONS || {};
 const urlLanguage = new URLSearchParams(window.location.search).get("lang");
